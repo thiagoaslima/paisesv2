@@ -1,18 +1,41 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {
+  StoreRouterConnectingModule,
+  RouterStateSerializer
+} from '@ngrx/router-store';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './root/routes/app-routing.module';
 import { AppComponent } from './app.component';
+import { reducers } from './root/store/reducers';
+import { environment } from '@env/environment';
+
+import { CustomRouterSerializer } from '@root/routes/routerSerializer';
+import { BarraMenuPrincipalComponent } from '@root/barra-menu-principal/barra-menu-principal.component';
+import { LanguageModule } from '@lang/language.module';
+import { BarraGovComponent } from '@root/barra-gov/barra-gov.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, BarraMenuPrincipalComponent, BarraGovComponent],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule.withServerTransition({ appId: 'paisesApp' }),
+    AppRoutingModule,
+    StoreModule.forRoot(reducers),
+    EffectsModule.forRoot([]),
+    StoreRouterConnectingModule,
+    LanguageModule,
+    SharedModule.forRoot(),
+
+    // !environment.production ? StoreDevtoolsModule.instrument() : []
+    StoreDevtoolsModule.instrument()
   ],
-  providers: [],
+  providers: [
+    { provide: RouterStateSerializer, useClass: CustomRouterSerializer }
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

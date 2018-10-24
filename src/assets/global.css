@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #4f4f4f;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('fonte/Roboto.ttf');
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url('fonte/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url('fonte/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: RobotoBlack;
+    src: url('fonte/Roboto-Black.ttf');
+}
+
+/*h2 {
+	font-size:1.5em;
+	margin:0;
+	font-weight:normal;
+	display:inline;
+}
+h3 {
+	font-weight:normal;
+	font-size:1.4em;
+}
+h4 {
+	font-weight:normal;
+	font-size:1.3em;
+}*/
+
+.gradiente{
+    background: #3bb2b8; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #42e695, #3bb2b8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #42e695, #3bb2b8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #42e695, #3bb2b8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #42e695, #3bb2b8); /* Standard syntax */  
+}
+
+.overlay{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.area-aplicacao{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    min-height: calc(100% - 104px);
+    top: 104px;
+}
+
+.area-aplicacao > div {
+    flex: 1;
+}
+
+/*****************************************
+Classes para organizar o z-index.
+******************************************/
+
+.bg-layer {
+    z-index: 1;
+}
+
+.map-layer {
+    z-index: 400;
+}
+/*
+    sobreescrevendo a configuração do leaflet
+*/
+.leaflet-top, 
+.leaflet-bottom {
+    z-index: 450;
+}
+/*
+    o z-index básico será 500 devido a
+    biblioteca leaflet, que coloca o valor de 
+    400 para o svg dos países
+*/
+.main-layer {
+    z-index: 500;
+}
+
+/*usada no logo ODS e na caixa flutuante da síntese*/
+.highlight-layer {
+    z-index: 700;
+}
+
+/*usada nos menus popups e caixas de sugestão (setar essa classe dinamicamente, apenas quando o menu/sugestão estiver aberto)*/
+.popup-layer {
+    z-index: 900;
+}
+
+/*
+    só deve ser usada dinamicamente
+    e apenas em um elemento por vez
+*/
+.highest-layer {
+    z-index: 9999;
+}
+
+/*******************************************/
+
+a, a:hover, a:visited {
+    color: #4f4f4f;
+    text-decoration: none;
+}
+
+/*desktop*/
+@media only screen and (min-width : 568px) {
+
+    .area-aplicacao{
+        width: 100%;
+        min-height: calc(100% - 80px);
+        top: 80px;
+    }
+    
+}
+
+
+/* utils */
+@media only screen and (max-width : 567px) {
+    .desktop-only {
+        display: none;
+    }
+}
+@media only screen and (min-width : 568px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+path.leaflet--interactive-layer {
+    fill: #757575;
+}
+
+path.leaflet--selected-layer {
+    fill: darkgrey;
+}
+
+path.leaflet--interactive-layer:hover:not(.leaflet--uninteractive-layer) {
+    fill: lightgray;
+}
+
+path.leaflet--uninteractive-layer {
+    stroke: none;
+    cursor: default;
+}
+
