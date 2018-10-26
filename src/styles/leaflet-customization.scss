@@ -1,0 +1,23 @@
+.leaflet-interactive {
+    fill-opacity: 1;
+    stroke: #4e4e4e;
+    stroke-width: 1px;
+}
+
+path.leaflet--interactive-layer {
+    fill: #757575;
+}
+
+path.leaflet--selected-layer {
+    fill: darkgrey;
+}
+
+path.leaflet--interactive-layer:hover:not(.leaflet--uninteractive-layer) {
+    fill: lightgray;
+}
+
+path.leaflet--uninteractive-layer {
+    stroke: none;
+    cursor: default;
+}
+

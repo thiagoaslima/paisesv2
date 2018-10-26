@@ -7,6 +7,7 @@
     padding: 0px;
 }
 
+/* 
 @font-face {
     font-family: Roboto;
     src: url('fonte/Roboto.ttf');
@@ -23,9 +24,11 @@
 @font-face {
     font-family: RobotoBlack;
     src: url('fonte/Roboto-Black.ttf');
-}
+} 
+*/
 
-/*h2 {
+/*
+h2 {
 	font-size:1.5em;
 	margin:0;
 	font-weight:normal;
@@ -38,7 +41,8 @@ h3 {
 h4 {
 	font-weight:normal;
 	font-size:1.3em;
-}*/
+}
+*/
 
 .gradiente{
     background: #3bb2b8; /* For browsers that do not support gradients */
@@ -144,21 +148,3 @@ a, a:hover, a:visited {
         display: none;
     }
 }
-
-path.leaflet--interactive-layer {
-    fill: #757575;
-}
-
-path.leaflet--selected-layer {
-    fill: darkgrey;
-}
-
-path.leaflet--interactive-layer:hover:not(.leaflet--uninteractive-layer) {
-    fill: lightgray;
-}
-
-path.leaflet--uninteractive-layer {
-    stroke: none;
-    cursor: default;
-}
-

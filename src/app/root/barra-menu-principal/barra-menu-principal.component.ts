@@ -11,7 +11,7 @@ import { ChangeLanguage } from './store/actions';
 @Component({
   selector: 'barra-menu-principal',
   templateUrl: './barra-menu-principal.component.html',
-  styleUrls: ['./barra-menu-principal.component.scss'],
+  styleUrls: ['./barra-menu-principal.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BarraMenuPrincipalComponent {

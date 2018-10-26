@@ -29,12 +29,6 @@ export function Locales({
     const name =
       component || target.name.toLowerCase().replace('component', '');
 
-    // if (typeof originalInit !== 'function') {
-    //   console.warn(
-    //     `${target.name} is using @Locale but does not implement OnInit.`
-    //   );
-    // }
-
     target.prototype.ngOnInit = function() {
       this.getLocales();
 
@@ -78,8 +72,8 @@ export function Locales({
     target.prototype.destroy$ = new Subject<void>();
 
     target.prototype.ngOnDestroy = function() {
-      this._destroy$.next();
-      this._destroy$.complete();
+      this.destroy$.next();
+      this.destroy$.complete();
 
       if (originalDestroy && typeof originalDestroy === 'function') {
         originalDestroy.apply(this, arguments);

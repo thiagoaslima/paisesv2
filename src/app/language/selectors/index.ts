@@ -1,6 +1,5 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import * as fromRouter from '@ngrx/router-store';
-import { IAppState, ILanguageState, LANGUAGE } from '../reducers';
+import { ILanguageState, LANGUAGE } from '../reducers';
 
 export const getLanguageState = createFeatureSelector<ILanguageState>(
   'language'
