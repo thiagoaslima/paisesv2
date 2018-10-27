@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { RequestService } from '../request.service';
-import { IValoresSintese, API } from './interfaces';
+import { IValoresSintese, API, ISintese } from './interfaces';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { LocalidadeService } from '../localidade';
 
 export namespace PaisesEnum {
   export enum temas {
@@ -32,20 +33,27 @@ export const sinteseDict = {
   providedIn: 'root'
 })
 export class PaisesService extends RequestService {
-  constructor(_httpClient: HttpClient) {
+  constructor(
+    _httpClient: HttpClient,
+    private localidadeService: LocalidadeService
+  ) {
     super(_httpClient);
   }
 
-  getSintese(sigla: string): Observable<Partial<IValoresSintese>> {
+  getSintese(sigla: string): Observable<ISintese> {
     return this.request<API.ResultadoByIndicador[]>(
       `https://servicodados.ibge.gov.br/api/v1/pesquisas/10071/indicadores/1/resultados/${siglaPais}`
     ).pipe(
       map(response => {
-        const valores = response.reduce((agg, item) => {
-          return { ...agg, [sinteseDict[item.id]]: item.res[0].res['-'] };
-        }, {});
+        const { slug } = this.localidadeService.getPaisBySlug(sigla);
+        const valores = response.reduce(
+          (agg, item) => {
+            return { ...agg, [sinteseDict[item.id]]: item.res[0].res['-'] };
+          },
+          {} as IValoresSintese
+        );
 
-        return { sigla, ...valores };
+        return { slug, sigla, ...valores };
       })
     );
   }
