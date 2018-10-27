@@ -1,9 +1,10 @@
 import { IAppState as _IAppState } from '@root/store/reducers';
-import { homeModuleLocales } from 'app/home/locales';
+import { homeModuleTranslation } from 'app/home/translation';
 import {
   ChangeLanguage,
   BarraMenuActions
 } from '@root/barra-menu-principal/store/actions';
+import { coreModuleTranslation } from 'app/core/components/translation';
 
 export enum LANGUAGE {
   portugues = 'pt',
@@ -17,7 +18,7 @@ export interface ILanguageLocale {
 
 export interface ILanguageState {
   current: LANGUAGE;
-  locales: { [module: string]: ILanguageLocale };
+  translation: { [module: string]: ILanguageLocale };
 }
 
 export interface IAppState extends _IAppState {
@@ -26,8 +27,9 @@ export interface IAppState extends _IAppState {
 
 const initialState: ILanguageState = {
   current: LANGUAGE.portugues,
-  locales: {
-    home: homeModuleLocales
+  translation: {
+    home: homeModuleTranslation,
+    core: coreModuleTranslation
   }
 };
 

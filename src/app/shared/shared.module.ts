@@ -1,6 +1,8 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { L10nPipe } from './pipes/l10n.pipe';
+import { LocalidadeService } from './localidade';
+import { PaisesService } from './paises/paises.service';
 
 @NgModule({
   imports: [CommonModule],
@@ -11,7 +13,10 @@ export class SharedModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: SharedModule,
-      providers: []
+      providers: [
+        LocalidadeService,
+        PaisesService
+      ]
     };
   }
 }

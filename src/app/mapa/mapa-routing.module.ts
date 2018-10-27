@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { MapaPageComponent } from './mapa-page/mapa-page.component';
 
 const routes: Routes = [
-  { path: '', component: MapaPageComponent }
+  { path: '', component: MapaPageComponent },
+  { path: ':pais', component: MapaPageComponent }
 ];
 
 @NgModule({

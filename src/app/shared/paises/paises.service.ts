@@ -1,0 +1,54 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { RequestService } from '../request.service';
+import { IValoresSintese, API } from './interfaces';
+import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+
+export namespace PaisesEnum {
+  export enum temas {
+    sintese = 1,
+    olimpicos = 2,
+    economia = 3,
+    sociais = 4,
+    ambiente = 5,
+    populacao = 6,
+    telefonia = 7,
+    ODM = 8,
+    ODS = 9,
+    saude = 100
+  }
+}
+
+export const sinteseDict = {
+  62941: 'capital',
+  62942: 'extensao',
+  62943: 'idioma',
+  62944: 'localizacao',
+  62945: 'moeda'
+};
+
+@Injectable({
+  providedIn: 'root'
+})
+export class PaisesService extends RequestService {
+  constructor(_httpClient: HttpClient) {
+    super(_httpClient);
+  }
+
+  getSintese(sigla: string): Observable<Partial<IValoresSintese>> {
+    return this.request<API.ResultadoByIndicador[]>(
+      `https://servicodados.ibge.gov.br/api/v1/pesquisas/10071/indicadores/1/resultados/${siglaPais}`
+    ).pipe(
+      map(response => {
+        const valores = response.reduce((agg, item) => {
+          return { ...agg, [sinteseDict[item.id]]: item.res[0].res['-'] };
+        }, {});
+
+        return { sigla, ...valores };
+      })
+    );
+  }
+
+  private _convertSinteseIdToName(id: number) {}
+}

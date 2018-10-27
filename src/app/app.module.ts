@@ -18,6 +18,7 @@ import { BarraMenuPrincipalComponent } from '@root/barra-menu-principal/barra-me
 import { LanguageModule } from '@lang/language.module';
 import { BarraGovComponent } from '@root/barra-gov/barra-gov.component';
 import { SharedModule } from './shared/shared.module';
+import { rootEffects } from '@root/store/effects';
 
 @NgModule({
   declarations: [AppComponent, BarraMenuPrincipalComponent, BarraGovComponent],
@@ -25,7 +26,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule.withServerTransition({ appId: 'paisesApp' }),
     AppRoutingModule,
     StoreModule.forRoot(reducers),
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot(rootEffects),
     StoreRouterConnectingModule,
     LanguageModule,
     SharedModule.forRoot(),
@@ -34,7 +35,7 @@ import { SharedModule } from './shared/shared.module';
     StoreDevtoolsModule.instrument()
   ],
   providers: [
-    { provide: RouterStateSerializer, useClass: CustomRouterSerializer }
+    { provide: RouterStateSerializer, useClass: CustomRouterSerializer },
   ],
   bootstrap: [AppComponent]
 })

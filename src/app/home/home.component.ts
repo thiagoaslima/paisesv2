@@ -7,11 +7,11 @@ import {
 } from '@angular/core';
 import { IAppState } from '@root/store/reducers';
 import { Store, select } from '@ngrx/store';
-import { getComponentLocale, getCurrentLanguage } from '../language/selectors';
+import { getComponentTranslation, getCurrentLanguage } from '../language/selectors';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { ActivatedRouteSnapshot, ActivatedRoute } from '@angular/router';
-import { Locales } from '@lang/decorator/Locales.decorator';
+import { Translate } from '@lang/decorator/Translate.decorator';
 
 @Component({
   selector: 'paises-home',
@@ -19,7 +19,7 @@ import { Locales } from '@lang/decorator/Locales.decorator';
   styleUrls: ['./home.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-@Locales({
+@Translate({
   module: 'home',
   shouldMark: true,
 })

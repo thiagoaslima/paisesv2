@@ -10,17 +10,17 @@ export const getCurrentLanguage = createSelector(
   state => state.current
 );
 
-export const getLocales = createSelector(
+export const getTranslation = createSelector(
   getLanguageState,
-  state => state.locales
+  state => state.translation
 );
 
-export const getModuleLocale = (module: string) =>
-  createSelector(getLocales, state => state[module]);
+export const getModuleTranslation = (module: string) =>
+  createSelector(getTranslation, state => state[module]);
 
-export const getComponentLocale = (module: string, component: string) =>
+export const getComponentTranslation = (module: string, component: string) =>
   createSelector(
-    getModuleLocale(module),
+    getModuleTranslation(module),
     getCurrentLanguage,
     (state, language) => {
       const localesPt = state[component][LANGUAGE.portugues];

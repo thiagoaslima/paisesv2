@@ -2,6 +2,7 @@ import { Component, OnInit, ChangeDetectionStrategy, HostBinding } from '@angula
 import { select, Store } from '@ngrx/store';
 import { getMalha } from '../store/selectors/malha.selectors';
 import { IAppState } from '../store/reducers';
+import { getPais } from '@root/store/selectors/core.selector';
 
 @Component({
   selector: 'mapa-page',
@@ -14,6 +15,7 @@ export class MapaPageComponent implements OnInit {
   @HostBinding('class.area-aplicacao') area = true;
 
   malha$ = this.store.pipe(select(getMalha));
+  pais$ = this.store.pipe(select(getPais));
 
   constructor(
     private store: Store<IAppState>
