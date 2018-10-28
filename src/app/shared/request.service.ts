@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { retry } from 'rxjs/operators';
+import { retry, timeout } from 'rxjs/operators';
 
 export class RequestService {
   constructor(protected _httpClient: HttpClient) {}
@@ -19,6 +19,9 @@ export class RequestService {
       options.params = params;
     }
 
-    return this._httpClient.get<T>(url, options).pipe(retry(3));
+    return this._httpClient.get<T>(url, options).pipe(
+      retry(3),
+      timeout(3000)
+    );
   }
 }

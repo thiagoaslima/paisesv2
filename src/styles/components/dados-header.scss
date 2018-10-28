@@ -1,0 +1,104 @@
+dados-header {
+  display: block;
+  width: 100%;
+
+  .dados-pais__menu {
+    display: none;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: $bg-black;
+
+    @include desktop() {
+      display: flex;
+    }
+
+    li {
+        padding: 15px;
+
+        &:last-of-type {
+            margin-left: auto;
+        }
+    }
+    
+  }
+
+  .sintese {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px 10px 20px;
+    background-color: $text-black;
+
+    @include desktop() {
+        padding: 0;
+      background-color: #ffffff;
+    }
+
+    .capa {
+      display: none;
+
+      @include desktop() {
+        display: block;
+        width: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        position: relative;
+      }
+    }
+
+    .capa-link {
+      position: absolute;
+      right: 10px;
+      bottom: 4px;
+
+      .capa-link-icon {
+        color: $text-white;
+        filter: drop-shadow(2px 2px 5px black);
+      }
+    }
+
+    .sintese-container {
+      width: 100%;
+
+      @include desktop() {
+        width: 35%;
+      }
+    }
+
+    .sintese-titulo-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 8px 8px 8px 16px;
+      color: $text-white;
+      
+      @include desktop() {
+        align-items: flex-start;
+        color: $text-black;
+      }
+
+      .sintese-bandeira {
+        width: 25%;
+        max-width: 100px;
+        margin-right: 10px;
+
+        @include desktop() {
+            width: 35%;
+          }
+      }
+
+      .sintese-titulo {
+        margin: 0;
+        font-size: 1.4em;
+        text-transform: uppercase;
+
+        @include desktop() {
+          font-size: 1.9em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<!--barra de menu-->
+<ul class="dados-pais__menu">
+  <li class="dados-pais__menu-item">
+    <a href="#" class="dados-pais__menu-link">{{ IMPRIMIR }}</a>
+  </li>
+  <li class="dados-pais__menu-item">
+    <a href="#" class="dados-pais__menu-link">{{ DOWNLOAD }}</a>
+  </li>
+  <li class="dados-pais__menu-item dados-pais__menu-item--right">
+    <botao-comparar></botao-comparar>
+  </li>
+</ul>
+
+<!--síntese-->
+<div class="sintese">
+
+  <!--capa-->
+  <div class="capa" [style.background-image]="'url(' + capa?.src + ')'">
+    <a [href]="capa?.href" target="_blank" rel="noopener noreferrer" class="capa-link">
+      <i class="fa fa-question-circle capa-link-icon"></i>
+    </a>
+  </div>
+
+  <!--tabela da síntese-->
+  <div class="sintese-container">
+    <div class="sintese-titulo-container">
+      <img class="sintese-bandeira" [src]="bandeiraSrc">
+      <h2 class="sintese-titulo">{{ pais?.nome }}</h2>
+    </div>
+    <paises-sintese [valores]="sintese"></paises-sintese>
+  </div>
+  
+</div>

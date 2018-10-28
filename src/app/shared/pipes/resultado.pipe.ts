@@ -8,7 +8,7 @@ export class ResultadoPipe implements PipeTransform {
     const unidades = ['r$'];
     const float =
       (typeof unidade !== 'undefined' && unidade !== null) ||
-      unidades.indexOf(unidade.toLocaleLowerCase()) >= 0;
+      unidade && unidades.indexOf(unidade.toLocaleLowerCase()) >= 0;
 
     switch (value) {
       case '99999999999999':

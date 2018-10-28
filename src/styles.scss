@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+
 
 @import "styles/normalize.css";
 @import "styles/global.css";
 @import "../node_modules/leaflet/dist/leaflet.css"; 
-@import "styles/leaflet-customization.scss"
+@import "styles/leaflet-customization.scss";
+
+/* components */
+
+@import "styles/components/main.scss"

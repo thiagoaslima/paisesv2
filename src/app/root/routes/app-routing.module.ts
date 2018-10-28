@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CanActivate } from '@angular/router/src/utils/preactivation';
+import { SintesePaisGuard } from '@root/guards/sintese-pais.guard';
 
 const routes: Routes = [
   {
@@ -9,11 +11,12 @@ const routes: Routes = [
   },
   {
     path: 'mapa',
-    loadChildren: 'app/mapa/mapa.module#MapaModule'
+    loadChildren: 'app/mapa/mapa.module#MapaModule',
   },
   {
-    path: 'dados/:pais',
-    loadChildren: 'app/dados-pais/dados-pais.module#DadosPaisModule'
+    path: 'dados',
+    loadChildren: 'app/dados-pais/dados-pais.module#DadosPaisModule',
+
   },
   { path: '**', redirectTo: 'mapa', pathMatch: 'full' }
 ];

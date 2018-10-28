@@ -7,7 +7,7 @@ import { Store } from '@ngrx/store';
 @Component({
   selector: 'paises-sintese',
   templateUrl: './sintese.component.html',
-  styleUrls: ['./sintese.component.css']
+  styleUrls: ['./sintese.component.scss']
 })
 @Translate({
   module: 'core',

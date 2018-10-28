@@ -1,0 +1,20 @@
+@import "../../../styles/mixins.scss";
+
+dados-header {
+  display: block;
+  width: 100%;
+  background-color: red;
+
+  .dados-pais__menu {
+      display: none;
+
+      @include desktop() {
+          display: block;
+          width: 100%;
+      }
+  }
+
+  .dados-pais__sintese {
+
+  }
+}

@@ -11,7 +11,7 @@ export interface ISinteseState {
 }
 
 export const initialState = {
-  loading: false,
+  loading: null,
   values: {}
 };
 

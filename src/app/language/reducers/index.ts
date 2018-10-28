@@ -6,6 +6,7 @@ import {
 } from '@root/barra-menu-principal/store/actions';
 import { coreModuleTranslation } from 'app/core/translation';
 import { mapaModuleTranslation } from 'app/mapa/translation';
+import { dadospaisModuleTranslation } from 'app/dados-pais/translation';
 
 export enum LANGUAGE {
   portugues = 'pt',
@@ -31,7 +32,8 @@ const initialState: ILanguageState = {
   translation: {
     home: homeModuleTranslation,
     core: coreModuleTranslation,
-    mapa: mapaModuleTranslation
+    mapa: mapaModuleTranslation,
+    dadospais: dadospaisModuleTranslation
   }
 };
 

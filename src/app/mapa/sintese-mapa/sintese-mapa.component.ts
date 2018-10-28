@@ -1,7 +1,7 @@
-import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { IAppState } from '../store/reducers';
 import { Store, select } from '@ngrx/store';
-import { getSinteseValues, isSinteseLoading } from '@root/store/selectors/sintese.selectors';
+import { getSinteseValues, isSinteseLoading, getSinteseCurrentPais } from '@root/store/selectors/sintese.selectors';
 import { combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { getPais } from '@root/store/selectors/core.selector';
@@ -20,16 +20,16 @@ import { Translate } from '@lang/decorator/Translate.decorator';
 })
 export class SinteseMapaComponent {
   sintese$ = combineLatest(
-    this.store.pipe(select(getSinteseValues)),
     this.store.pipe(select(getPais)),
+    this.store.pipe(select(getSinteseCurrentPais)),
     this.store.pipe(select(isSinteseLoading)),
   ).pipe(
-    map(([values, pais, isLoading]) => {
-      const valores = values && pais ? values[pais.slug] : {};
+    map(([pais, values, isLoading]) => {
+
       const imageSrc = pais
         ? 'assets/img/bandeiras/' + pais.sigla.toUpperCase() + '.gif'
         : '';
-      return { values: valores, pais, imageSrc, isLoading };
+      return { values, pais, imageSrc, isLoading };
     })
   );
 

@@ -22,6 +22,7 @@
       "@root/*": ["app/root/*"],
       "@lang/*": ["app/language/*"],
       "@env/*": ["environments/*"],
+      "@styles/*": ["styles/*"]
     } 
   }
 }

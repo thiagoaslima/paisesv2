@@ -8,6 +8,6 @@ export const getPais = createSelector(
   getCoreState,
   getCurrentLanguage,
   (state, language) => {
-    return { ...state.pais, nome: state.pais.nome[language] };
+    return state.pais ? { ...state.pais, nome: state.pais.nome[language] } : null;
   }
 );

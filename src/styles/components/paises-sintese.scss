@@ -1,0 +1,30 @@
+paises-sintese {
+  display: block;
+
+  table {
+    color: $text-white;
+    font-size: 0.9em;
+    text-align: left;
+    width: 100%;
+
+    @include desktop() {
+      color: $text-black;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid #cbcbcb;
+  }
+  tr:last-of-type {
+    border: none;
+  }
+
+  td,
+  th {
+    padding: 8px 16px;
+  }
+
+  th {
+    font-weight: 600;
+  }
+}
