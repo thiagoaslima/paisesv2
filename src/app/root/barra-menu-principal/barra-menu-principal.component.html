@@ -24,7 +24,7 @@
           <!--<i class="fa fa-ellipsis-h cabecalho__menu-icone" aria-hidden="true"></i>-->
           <span class="cabecalho__menu-button-label">...</span>
       </button>
-      <ul class="cabecalho__menu" *ngIf="mostraMenu">
+      <ul class="cabecalho__menu highlight-layer" *ngIf="mostraMenu">
           <li><a class="cabecalho__menu-item cabecalho__menu-item--separator" href="#">{{'barra-menu-principal__home' | l10n}}</a></li>
           <!--<li><a class="cabecalho__menu-item cabecalho__menu-item--separator" href="#">{{'barra-menu-principal__ods' | l10n}}</a></li>-->
           <li class="cabecalho__menu-item" [class.cabecalho__menu-item--highlight]="language=='pt'" (click)="changeLanguage('pt')">Português</li>

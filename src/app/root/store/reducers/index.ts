@@ -4,6 +4,7 @@ import * as fromRouter from '@ngrx/router-store';
 
 import { environment } from '@env/environment';
 import { ICoreState, coreReducer } from './core.reducer';
+import { ISinteseState, sinteseReducer } from './sintese.reducer';
 
 export interface IRouterStateUrl {
   url: string;
@@ -15,11 +16,13 @@ export interface IRouterStateUrl {
 export interface IAppState {
   routerReducer: fromRouter.RouterReducerState<IRouterStateUrl>;
   core: ICoreState;
+  sintese: ISinteseState;
 }
 
 export const reducers: ActionReducerMap<IAppState> = {
   routerReducer: fromRouter.routerReducer,
-  core: coreReducer
+  core: coreReducer,
+  sintese: sinteseReducer,
 };
 
 export const metaReducers: MetaReducer<IAppState>[] = !environment.production

@@ -1,0 +1,48 @@
+<ng-container *ngIf="sintese$ | async as sintese">
+    <div class="sintese main-layer" *ngIf="!sintese?.isLoading">
+        <!--barra de título-->
+        <div class="sintese__barra-titulo">
+            <!--título-->
+            <h2 class="sintese__titulo" [title]="pais?.nome.pt">{{ sintese.pais?.nome }}</h2>
+            <!--botão de fechar-->
+            <a class="button sintese__botao-fechar" routerLink="/mapa">
+                <!-- <button class="sintese__botao-fechar"> -->
+                <i class="fa fa-times sintese__icone-fechar" aria-hidden="true"></i>
+                <!-- </button> -->
+            </a>
+        </div>
+        <!--dados-->
+        <div class="sintese__info-container">
+            <ng-container *ngIf="sintese?.pais && sintese?.values">
+
+                <!--bandeira-->
+                <div *ngIf="sintese?.imageSrc" class="sintese__bandeira-container">
+                    <img alt="bandeira" [src]="sintese?.imageSrc" class="sintese__bandeira-imagem">
+                </div>
+                <!--título-->
+                <!--<h2 class="sintese__titulo">{{ pais?.nome.pt }}</h2>-->
+
+                <!--tabela de valores-->
+                <paises-sintese [valores]="sintese?.values"></paises-sintese>
+
+                <!-- <table class="sintese__tabela"> 
+            <tbody>
+                <tr class="sintese__tabela-linha" *ngFor="let item of itens">
+                    <th class="sintese__tabela-nome">{{ item.titulo }}</th>
+                    <td class="sintese__tabela-valor">{{ item.valor | resultado }}</td>
+                </tr>
+            </tbody>
+        </table> -->
+                <!--leia mais-->
+                <div class="sintese__leia-mais">
+                    <a [routerLink]="'/dados/' + sintese?.pais?.slug" class="sintese__leia-mais-link">{{ LEIA_MAIS }}</a>
+                </div>
+
+            </ng-container>
+
+            <ng-container *ngIf="sintese?.pais && !sintese?.values && !isLoading">
+                <p class="sintese__tabela-nome">{{ SEM_DADOS }}</p>
+            </ng-container>
+        </div>
+    </div>
+</ng-container>

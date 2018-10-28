@@ -1,3 +1,7 @@
 {
-    
+    "CAPITAL": "Capital",
+    "EXTENSAO_TERRITORIAL": "Land boundaries",
+    "IDIOMA": "Languages",
+    "LOCALIZACAO": "Location",
+    "MOEDA": "Currency"
 }

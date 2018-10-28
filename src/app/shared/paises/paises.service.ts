@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { RequestService } from '../request.service';
-import { IValoresSintese, API, ISintese } from './interfaces';
+import { IValoresSintese, API, ISintese } from './models';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { LocalidadeService } from '../localidade';
@@ -42,10 +42,10 @@ export class PaisesService extends RequestService {
 
   getSintese(sigla: string): Observable<ISintese> {
     return this.request<API.ResultadoByIndicador[]>(
-      `https://servicodados.ibge.gov.br/api/v1/pesquisas/10071/indicadores/1/resultados/${siglaPais}`
+      `https://servicodados.ibge.gov.br/api/v1/pesquisas/10071/indicadores/1/resultados/${sigla}`
     ).pipe(
       map(response => {
-        const { slug } = this.localidadeService.getPaisBySlug(sigla);
+        const { slug } = this.localidadeService.getPaisBySigla(sigla);
         const valores = response.reduce(
           (agg, item) => {
             return { ...agg, [sinteseDict[item.id]]: item.res[0].res['-'] };
@@ -57,6 +57,4 @@ export class PaisesService extends RequestService {
       })
     );
   }
-
-  private _convertSinteseIdToName(id: number) {}
 }

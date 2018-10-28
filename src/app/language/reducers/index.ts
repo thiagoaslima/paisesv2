@@ -4,7 +4,8 @@ import {
   ChangeLanguage,
   BarraMenuActions
 } from '@root/barra-menu-principal/store/actions';
-import { coreModuleTranslation } from 'app/core/components/translation';
+import { coreModuleTranslation } from 'app/core/translation';
+import { mapaModuleTranslation } from 'app/mapa/translation';
 
 export enum LANGUAGE {
   portugues = 'pt',
@@ -29,7 +30,8 @@ const initialState: ILanguageState = {
   current: LANGUAGE.portugues,
   translation: {
     home: homeModuleTranslation,
-    core: coreModuleTranslation
+    core: coreModuleTranslation,
+    mapa: mapaModuleTranslation
   }
 };
 

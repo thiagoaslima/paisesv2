@@ -1,8 +1,8 @@
-import { Action } from '@ngrx/store';
 import { PaisSelecionado, CoreActions } from '../actions/core.actions';
+import { Pais } from 'app/shared/localidade';
 
 export interface ICoreState {
-  pais: any;
+  pais: Pais;
 }
 
 const initialState: ICoreState = {
