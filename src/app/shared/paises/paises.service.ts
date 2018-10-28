@@ -57,4 +57,12 @@ export class PaisesService extends RequestService {
       })
     );
   }
+
+  getHistorico(sigla: string) {
+    return this.request<API.Historico[]>(
+      `https://servicodados.ibge.gov.br/api/v1/paises/olimpicos/valores/pais/${sigla}`
+    ).pipe(
+      map(response => response.find(obj => obj.indicador === 44))
+    );
+  }
 }

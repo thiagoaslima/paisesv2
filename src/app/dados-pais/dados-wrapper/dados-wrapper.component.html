@@ -1,9 +1,7 @@
 <div>
     <dados-header [dados]="header$ | async"></dados-header>
+    <paises-historico [historico]="historico$ | async"></paises-historico>
+    
     <pre>{{ header$ | async | json }}</pre>
-  
-
-  
-
-  
+    <pre>{{ historico$ | async | json }}</pre>
 </div>

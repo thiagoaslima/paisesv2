@@ -8,5 +8,13 @@ export declare module API {
         }>;
       }>;
     }
+
+    export interface Historico {
+        pais: string;
+        periodo: string;
+        indicador: number;
+        valor: string;
+        valor_en: string;
+    }
 }
 

@@ -11,3 +11,17 @@ export const getPais = createSelector(
     return state.pais ? { ...state.pais, nome: state.pais.nome[language] } : null;
   }
 );
+
+export const getHistoricos = createSelector(
+  getCoreState,
+  state => state.historicos
+);
+
+export const getCurrentHistorico = createSelector(
+  getPais,
+  getHistoricos,
+  getCurrentLanguage,
+  (pais, historicos, idioma) => {
+    return historicos[pais.sigla] ? historicos[pais.sigla][idioma] : null;
+  }
+)

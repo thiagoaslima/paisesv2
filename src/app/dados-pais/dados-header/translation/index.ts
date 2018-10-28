@@ -1,6 +1,6 @@
-import * as pt from './home-pt.translation.json';
-import * as en from './home-en.translation.json';
-import * as es from './home-es.translation.json';
+import * as pt from './header-pt.translation.json';
+import * as en from './header-en.translation.json';
+import * as es from './header-es.translation.json';
 
 export const dadosheaderTranslation = {
     // @ts-ignore

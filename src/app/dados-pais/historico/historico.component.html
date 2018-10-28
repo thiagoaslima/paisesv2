@@ -2,20 +2,25 @@
 <div class="dados-pais__historico">
     <div class="dados-pais__historico-titulo-container" [class.dados-pais__historico-titulo-container--ativo]="historico_aberto"
         (click)="historico_aberto = !historico_aberto">
-        <h3 class="dados-pais__historico-titulo">HISTÓRICO</h3>
+        <h3 class="dados-pais__historico-titulo">{{ HISTORICO }} | {{ TEXTO_MAIS }} | {{ TEXTO_MENOS }}</h3>
         <i class="fa fa-plus dados-pais__historico-icone" aria-hidden="true" *ngIf="!historico_aberto"></i>
         <i class="fa fa-minus dados-pais__historico-icone" aria-hidden="true" *ngIf="historico_aberto"></i>
     </div>
     <div class="dados-pais__historico-paragrafos-container" [class.dados-pais__historico-paragrafos-container--aberto]="historico_aberto">
-        <p class="dados-pais__historico-paragrafo" *ngFor="let paragrafo of historico">
+        <p class="dados-pais__historico-paragrafo" *ngFor="let paragrafo of historico?.texto">
             {{ paragrafo }}
         </p>
+        <ng-container *ngFor="let link of historico?.links">
+            <p class="dados-pais__historico-paragrafo">
+                <a [href]="link">{{ link }}</a>
+            </p>
+        </ng-container>
         <div class="dados-pais__historico-degrade" *ngIf="!historico_aberto"></div>
     </div>
     <div class="dados-pais__historico-mais-container">
         <button class="dados-pais__historico-mais" (click)="historico_aberto = !historico_aberto">
-            <span class="dados-pais__historico-mais-label" *ngIf="!historico_aberto">Mostrar mais</span>
-            <span class="dados-pais__historico-mais-label" *ngIf="historico_aberto">Mostrar menos</span>
+            <span class="dados-pais__historico-mais-label" *ngIf="!historico_aberto">{{ TEXTO_MAIS }}</span>
+            <span class="dados-pais__historico-mais-label" *ngIf="historico_aberto">{{ TEXTO_MENOS }}</span>
         </button>
     </div>
 </div>

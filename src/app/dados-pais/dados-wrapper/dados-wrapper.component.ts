@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { IAppState } from '@root/store/reducers';
 import { Store, select } from '@ngrx/store';
-import { getPais } from '@root/store/selectors/core.selector';
+import { getPais, getCurrentHistorico } from '@root/store/selectors/core.selector';
 import { combineLatest } from 'rxjs';
 import {
   getSinteseCurrentPais
@@ -19,6 +19,8 @@ export class DadosWrapperComponent {
     this.store.pipe(select(getPais)),
     this.store.pipe(select(getSinteseCurrentPais))
   ).pipe(map(([pais, sintese]) => ({ pais, sintese })));
+
+  historico$ = this.store.pipe(select(getCurrentHistorico));
 
   constructor(private store: Store<IAppState>) {}
 }
