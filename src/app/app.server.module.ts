@@ -5,7 +5,7 @@ import { AppModule } from './app.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './root/routes/app-routing.module';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from './root/store/reducers';
+import { reducers } from './root/store/reducers';
 import { RouterStateSerializer, StoreRouterConnectingModule } from '@ngrx/router-store';
 import { CustomRouterSerializer } from './root/routes/routerSerializer';
 import { EffectsModule } from '@ngrx/effects';
@@ -16,7 +16,7 @@ import { LanguageModule } from './language/language.module';
     AppModule,
     ServerModule,
     AppRoutingModule,
-    StoreModule.forRoot(reducers, { metaReducers }),
+    StoreModule.forRoot(reducers),
     EffectsModule.forRoot([]),
     StoreRouterConnectingModule,
     LanguageModule,

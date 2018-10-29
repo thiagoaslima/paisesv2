@@ -1,0 +1,56 @@
+<div class="grafico">
+    <!--valor-->
+    <div class="grafico__valor-container" *ngIf="!mostrarLegenda">
+        <p class="grafico__valor">&nbsp; {{ getValor() | resultado }}</p>
+        <p class="grafico__valor-metadata">&nbsp; {{ unidade }}</p>
+    </div>
+    <!-- grafico -->
+    <div class="grafico_grafico-container">
+        <svg [attr.viewBox]="'0 0 ' + LARGURA_GRAFICO + ' ' + ALTURA_GRAFICO" class="grafico__svg" #grafico (mousemove)="setTooltip($event, grafico)" (mouseleave)="resetTooltip()">
+            <!--eixo x-->
+            <line x1="0" [attr.y1]="POSICAO_EIXO_X" [attr.x2]="LARGURA_GRAFICO" [attr.y2]="POSICAO_EIXO_X" class="grafico__eixo-x"/>
+
+            <!--rótulos-->
+            <text *ngFor="let rotulo of rotulosX; let i = index" [attr.x]="getX(i, rotulo != null ? rotulo.length * CHAR_WIDTH : 0)" [attr.y]="POSICAO_EIXO_X + ALTURA_ROTULO" class="grafico__rotulo">{{ rotulo }}</text>
+
+            <!--linhas guia tracejadas-->
+            <ng-template ngFor let-rotulo let-i="index" [ngForOf]="rotulosX">
+                <line *ngIf="valorValido(getMaxY(i))" [attr.x1]="getX(i, 0)" [attr.y1]="POSICAO_EIXO_X" [attr.x2]="getX(i, 0)" [attr.y2]="getMaxY(i)" class="grafico__linha-guia"/>
+            </ng-template>
+
+            <!--linhas dos dados com pontos-->
+            <g *ngFor="let dado of dados; let j = index">
+                <!--linha-->
+                <ng-template ngFor let-valor let-i="index" [ngForOf]="dado">
+                    <line *ngIf="valorValido(getY(i, j)) && valorValido(getY(i + 1, j))"
+                        [attr.x1]="getX(i, 0)" [attr.y1]="getY(i, j)"
+                        [attr.x2]="getX(i + 1, 0)" [attr.y2]="getY(i + 1, j)" [ngClass]="'grafico__linha grafico__cor--' + j"/>
+                </ng-template>
+                <!--ponto-->
+                <ng-template ngFor let-valor let-i="index" [ngForOf]="dado">
+                    <circle *ngIf="valorValido(getY(i, j))" [attr.cx]="getX(i, 0)" [attr.cy]="getY(i, j)" r="4px"
+                        class="grafico__no-fill" [ngClass]="'grafico__ponto grafico__cor--' + j"/> 
+                        <!--[class.grafico__no-fill]='getIndexSelecionado() != i'/>-->
+                </ng-template>
+            </g>
+        </svg>
+        <!--tooltips-->
+        <div class="grafico__tooltip" *ngIf="tooltip != null"
+            [style.left]="tooltip.x + '%'"
+            [style.top]="tooltip.y + '%'">
+            <div class="grafico__tooltip-seta"></div>
+            <p class="grafico__tootip-texto"> {{ tooltip.rotulo }}  </p>
+            <p class="grafico__tootip-texto"> {{ tooltip.valor | resultado }} {{ unidade }} </p>
+        </div>
+    </div>
+    <!--legenda-->
+    <div class="grafico__legenda" *ngIf="rotulosY != null && mostrarLegenda">
+        <div class="grafico__legenda-item" *ngFor="let rotulo of rotulosY; let i = index">
+            <div class="grafico__legenda-icone">
+                <span [ngClass]="'grafico__legenda-barra grafico__cor--' + i" ></span>
+                <span [ngClass]="'grafico__legenda-circulo grafico__cor--' + i"></span>
+            </div>
+            <span class="grafico__legenda-nome">{{ rotulo }}</span>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,82 @@
-<h1>Card</h1>
+<!--card-->
+<div>
+    <!--barra de título-->
+    <div class="card__barra-titulo" [class.card__barra-titulo--ativo]="cardAberto" (click)="cardAberto = !cardAberto">
+        <h3 class="card__titulo">{{ titulo }}</h3>
+        <!--<button class="card__titulo-icone-flip" (click)="mostrarTabela=!mostrarTabela"><img src="../../../img/flip-icon.svg"></button>-->
+        <i class="fa fa-plus card__titulo-icone" aria-hidden="true" *ngIf="!cardAberto"></i>
+        <i class="fa fa-minus card__titulo-icone" aria-hidden="true" *ngIf="cardAberto"></i>
+    </div>
+    <div class="card__conteudo" [class.card__conteudo--aberto]="cardAberto">
+        <!--combo container-->
+        <div class="card__combo-container">
+            <!--combo box-->
+            <select #select class="card__combo" (change)="setGrafico(select.value);">
+                <ng-container *ngFor="let obj of dados; let idx = index">
+                    <option [attr.value]="idx">{{ obj.nome }}</option>
+                </ng-container>
+            </select>
+        </div>
+        <!--gráfico-->
+        <paises-grafico *ngIf="!mostrarTabela"
+            [rotulosX]="dados[graficoAtual]?.periodos"
+            [rotulosY]="['']"
+            [unidade]="dados[graficoAtual]?.unidade"
+            [dados]="[dados[graficoAtual]?.valores]"
+            [mostrarLegenda]="false"
+        >
+        </paises-grafico>
+        <!--tabela mobile-->
+        <!--<div class="card__tabela-mobile-container">
+            <table class="card__tabela-mobile">
+                <tr class="card__tabela-mobile-linha" *ngFor="let obj of tema.valores;">
+                    <td class="card__tabela-mobile-celula">{{ obj.titulo }}</td>
+                    <td class="card__tabela-mobile-celula">
+                        <span class="card__tabela-mobile-valor">{{ obj.valores[obj.valores.length - 1] }}</span>
+                        <span class="card__tabela-mobile-unidade">{{getUnidade(obj.unidade)}}</span>
+                    </td>
+                </tr>
+            </table>
+        </div>-->
+        <!--tabela-->
+        <div class="card__tabela-mobile-container" *ngIf="mostrarTabela">
+            <table class="card__tabela-mobile">
+                <tr class="card__tabela-mobile-linha">
+                    <th class="card__tabela-mobile-titulo">Ano</th>
+                    <th class="card__tabela-mobile-titulo">Valor</th>
+                </tr>
+                <tr class="card__tabela-mobile-linha" *ngFor="let periodo of dados[graficoAtual]?.periodos; let i = index">
+                    <td class="card__tabela-mobile-celula">{{ periodo }}</td>
+                    <td class="card__tabela-mobile-celula">
+                        <span class="card__tabela-mobile-valor">{{ dados[graficoAtual].valores[i] | resultado }}</span>
+                        <span class="card__tabela-mobile-unidade">{{ dados[graficoAtual].unidade }}</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--rodapé-->
+        <div class="card__rodape">
+            <!--<div class="card__rodape-buttons-container">
+                <button class="card__rodape-buttom" (click)="mostrarTabela=!mostrarTabela">{{mostrarTabela ? 'Grafico' : 'Tabela'}}</button>
+                <button class="card__rodape-buttom">Fonte</button>
+            </div>-->
+            <div class="card__rodape-buttons-container">
+                <p class="card__fonte" *ngFor="let fonte of dados[graficoAtual]?.fonte">
+                    <span class="card__fonte-titulo">Fonte:</span>
+                    <a class="card__fonte-link" [href]="getLinkFonte(fonte)" target="_blank" rel="noopener noreferrer">{{ getTextoFonte(fonte) }}</a>
+                </p>
+            </div>
+            <div class="card__rodape-links">
+                <botao-comparar type="comparar" class="card__rodape-buttom-comparar" [href]="'/mapa/comparar'"></botao-comparar>
+                <botao-comparar type="mapa" class="card__rodape-buttom-comparar" [href]="'/mapa/ranking/' + dados[graficoAtual]?.id + '/' + pais?.slug"></botao-comparar>
+            </div>
+            
+        </div>
+        <!--<div class="card__rodape">
+            <p class="card__fonte">
+                <span class="card__fonte-titulo">FONTE</span>:
+                {{ tema | json }}
+            </p>
+        </div>-->
+    </div>
+</div>

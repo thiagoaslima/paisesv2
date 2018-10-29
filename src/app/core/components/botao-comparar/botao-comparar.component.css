@@ -1,12 +1,16 @@
 /*desktop*/
+botao-comparar {
+    display: inline-block;
+    font: 'Roboto', Helvetica, Arial;
+    color: inherit;
+}
+
 @media only screen and (min-width : 568px) {
 
     /*barra de menu*/
 
     .dados-pais__menu-link{
-        color: #fff;
         text-transform: uppercase;
-        font-size: 0.8em;
     }
 
     .dados-pais__menu-link:hover{

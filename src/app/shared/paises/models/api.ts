@@ -35,6 +35,10 @@ export declare namespace API {
       descricao: string;
       calculo: string;
     };
+    fonte: Array<{
+      periodo: string;
+      fontes: string[];
+    }>;
   }
 
   export interface ResultadoByLocalidade {

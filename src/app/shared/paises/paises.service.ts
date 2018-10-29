@@ -74,11 +74,9 @@ export class PaisesService extends RequestService {
   }
 
   getResultados(sigla: string) {
-    debugger;
     return this.request<API.ResultadoByLocalidade[]>(
       `https://servicodados.ibge.gov.br/api/v1/pesquisas/10071/indicadores/0/resultados/${sigla}?groupBy=localidade`
     ).pipe(map(response => {
-      debugger;
       return response[0];
     }));
   }
@@ -111,7 +109,7 @@ export class PaisesService extends RequestService {
     const saude: ITemaIndicadores = {
       posicao: TemaId.saude.toString(10),
       nome: 'Saude',
-      indicadores: [62971, 62973]
+      indicadores: [62973, 62971]
     };
 
     const temas: ITemaIndicadores[] = indicadores.reduce((agg, indicador) => {
@@ -138,5 +136,6 @@ export class PaisesService extends RequestService {
     if (indicador.children && indicador.children.length > 0) {
       indicador.children.forEach(ind => this.flatTree(ind, flatten));
     }
+    delete indicador.children;
   }
 }

@@ -1,0 +1,32 @@
+dados-graficos {
+  display: block;
+}
+
+.dados-pais__cards-container {
+  text-align: center;
+  margin-top: 0px;
+}
+
+/*desktop*/
+@media only screen and (min-width: 568px) {
+  .dados-pais__cards-container {
+    margin-top: 20px;
+  }
+
+  paises-card {
+    display: inline-block;
+    width: 45%;
+    border: 1px solid #a7a7a7;
+    margin: 5px;
+    background-color: transparent;
+  }
+}
+
+/*telas grandes*/
+@media only screen and (min-width : 992px) {
+
+    paises-card {
+        width: 30%;
+    }
+
+}

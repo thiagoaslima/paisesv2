@@ -1,19 +1,9 @@
 <!--cards container-->
 <div class="dados-pais__cards-container">
-    <paises-card></paises-card>
-</div>
-<div class="dados-pais__cards-container">
-    <paises-card></paises-card>
-</div>
-<div class="dados-pais__cards-container">
-    <paises-card></paises-card>
-</div>
-<div class="dados-pais__cards-container">
-    <paises-card></paises-card>
-</div>
-<div class="dados-pais__cards-container">
-    <paises-card></paises-card>
-</div>
-<div class="dados-pais__cards-container">
-    <paises-card></paises-card>
+    <paises-card [pais]="pais$ | async" [titulo]="ECONOMIA" [dados]="economia$ | async"></paises-card>
+    <paises-card [pais]="pais$ | async" [titulo]="SOCIAIS" [dados]="sociais$ | async"></paises-card>
+    <paises-card [pais]="pais$ | async" [titulo]="AMBIENTE" [dados]="ambiente$ | async"></paises-card>
+    <paises-card [pais]="pais$ | async" [titulo]="POPULACAO" [dados]="populacao$ | async"></paises-card>
+    <paises-card [pais]="pais$ | async" [titulo]="REDES" [dados]="redes$ | async"></paises-card>
+    <paises-card [pais]="pais$ | async" [titulo]="SAUDE" [dados]="saude$ | async"></paises-card>
 </div>

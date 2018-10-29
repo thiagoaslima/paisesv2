@@ -17,3 +17,17 @@ export const getIndicadores = createSelector(
   getIndicadoresState,
   state => state.values
 );
+export const getTemas = createSelector(
+  getIndicadoresState,
+  state => state.temas
+);
+
+export const getTema = (temaId: string) =>
+  createSelector(getTemas, temas => (temas ? temas[temaId] : null));
+export const getIndicadoresTema = (temaId: string) =>
+  createSelector(
+    getTema(temaId),
+    getIndicadores,
+    (tema, indicadores) =>
+      tema ? tema.indicadores.map(id => indicadores[id]) : []
+  );

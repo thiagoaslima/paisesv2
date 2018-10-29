@@ -1,3 +1,10 @@
 <a [href]="href" class="dados-pais__menu-link">
-  <i class="fa fa-signal dados-pais__menu-icon" aria-hidden="true"></i> {{ TEXTO_BOTAO }}
+  <ng-container [ngSwitch]="type">
+    <ng-container *ngSwitchDefault>
+      <i class="fa fa-signal dados-pais__menu-icon" aria-hidden="true"></i> {{ TEXTO_COMPARAR }}
+    </ng-container>
+    <ng-container *ngSwitchCase="'mapa'">
+      <i class="fa fa-globe-americas dados-pais__menu-icon" aria-hidden="true"></i> {{ TEXTO_MAPA }}
+    </ng-container>
+  </ng-container>
 </a>

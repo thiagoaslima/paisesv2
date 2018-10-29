@@ -15,7 +15,6 @@ export const getResultadosOfPais = createSelector(
   getResultados,
   getPais,
   (resultados, pais) => {
-    debugger;
     return resultados && pais
       ? resultados[pais.sigla]
         ? resultados[pais.sigla]

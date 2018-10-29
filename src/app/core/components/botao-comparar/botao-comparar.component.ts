@@ -20,8 +20,15 @@ import { Store } from '@ngrx/store';
   shouldMark: true
 })
 export class BotaoCompararComponent {
+  // marcadores texto
+  TEXTO_COMPARAR = '';
+  TEXTO_MAPA = '';
+
   @Input()
   href: string;
+
+  @Input()
+  type: 'comparar' | 'mapa' = 'comparar';
 
   constructor(
     private cdr: ChangeDetectorRef,

@@ -16,7 +16,6 @@ export class ResultadosEffects {
     ofType<ResultadosGet>(ResultadosGet.type),
     flatMap(({ payload }) => this.paisesService.getResultados(payload)),
     map(response => {
-      debugger;
       const resultados = {
         [response.localidade]: response.res.reduce(
           (agg, item) => ({ ...agg, [item.indicador]: item.res }),

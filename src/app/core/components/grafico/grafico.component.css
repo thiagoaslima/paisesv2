@@ -1,0 +1,175 @@
+/*mobile first*/
+paises-grafico {
+  display: block;
+}
+
+.grafico {
+}
+
+.grafico__svg {
+  width: 100%;
+  height: auto;
+}
+
+.grafico__eixo-x {
+  stroke: rgb(77, 77, 77);
+  stroke-width: 1px;
+}
+
+.grafico__linha-guia {
+  stroke: rgb(200, 200, 200);
+  stroke-width: 1px;
+  stroke-dasharray: 4px, 4px;
+}
+
+.grafico__rotulo {
+  fill: #4d4d4d;
+  font-size: 10px; /* 12px; */
+}
+
+.grafico__ponto {
+  stroke-width: 2.5px;
+  fill: white;
+}
+
+.grafico__linha {
+  stroke-width: 3px;
+}
+
+/*cores*/
+
+.grafico__cor--0 {
+  background-color: #3ecca7;
+  stroke: #3ecca7;
+  fill: #3ecca7;
+}
+
+.grafico__cor--1 {
+  background-color: #e7d766;
+  stroke: #e7d766;
+  fill: #e7d766;
+}
+
+.grafico__cor--2 {
+  background-color: #a27e56;
+  stroke: #a27e56;
+  fill: #a27e56;
+}
+
+.grafico__cor--3 {
+  background-color: #949494;
+  stroke: #949494;
+  fill: #949494;
+}
+
+.grafico__cor--4 {
+  background-color: #42e695;
+  stroke: #42e695;
+  fill: #42e695;
+}
+
+.grafico__no-fill {
+  fill: white;
+}
+
+/*valor*/
+
+.grafico__valor-container {
+  padding: 0 18px;
+}
+
+.grafico__valor {
+  margin: 0;
+  text-align: right;
+  font-size: 1.3em;
+  font-family: 'RobotoMedium', Helvetica, Arial, sans-serif;
+}
+
+.grafico__valor-metadata {
+  margin: 0;
+  text-align: right;
+  font-size: 0.7em;
+  font-family: 'RobotoMedium', Helvetica, Arial, sans-serif;
+}
+
+/*legenda*/
+
+.grafico__legenda {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.grafico__legenda-item {
+  display: inline-block;
+  margin: 5px 20px 0px 0px;
+}
+
+.grafico__legenda-icone {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.grafico__legenda-barra {
+  display: inline-block;
+  width: 24px;
+  height: 4px;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 0px;
+}
+
+.grafico__legenda-circulo {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+}
+
+.grafico__legenda-nome {
+  display: inline-block;
+  font-size: 0.8em;
+  font-family: 'RobotoRegular', Helvetica, Arial, sans-serif;
+}
+
+.grafico_grafico-container {
+  position: relative;
+}
+
+.grafico__tooltip {
+  z-index: 100;
+  position: absolute;
+  background-color: black;
+  padding: 5px;
+  margin-left: -14px;
+  margin-top: 14px;
+  pointer-events: none;
+}
+
+.grafico__tootip-texto {
+  color: white;
+  font-size: 0.8em;
+  font-family: 'RobotoRegular', Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+.grafico__tooltip-seta {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid black;
+  position: absolute;
+  top: -7px;
+  left: 7px;
+}
+
+/*desktop*/
+
+@media only screen and (min-width: 568px) {
+}
