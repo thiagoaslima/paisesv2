@@ -34,7 +34,7 @@ export class ResultadosGuard implements CanActivate {
       map(resultados => !!resultados),
       tap(hasResultados => {
         if (!hasResultados) {
-          this.store.dispatch(new ResultadosGet(sigla));
+          this.store.dispatch(new ResultadosGet([sigla]));
         }
       }),
       filter(Boolean),

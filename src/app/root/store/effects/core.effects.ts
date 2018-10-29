@@ -6,16 +6,32 @@ import {
   PaisSelecionado,
   HistoricoGet,
   HistoricoSuccess,
-  HistoricoFail
+  HistoricoFail,
+  PaisesGet,
+  PaisesSuccess
 } from '../actions/core.actions';
-import { map, switchMap, catchError, flatMap } from 'rxjs/operators';
+import {
+  combineLatest,
+  map,
+  switchMap,
+  catchError,
+  flatMap,
+  filter
+} from 'rxjs/operators';
 import { of } from 'rxjs';
-import { ROUTER_NAVIGATION } from '@ngrx/router-store';
-import { ParamMap } from '@angular/router';
 import { PaisesService } from 'app/shared/paises/paises.service';
+import { IAppState } from 'app/mapa/store/reducers';
+import { Store, select } from '@ngrx/store';
+import { getPais } from '../selectors/core.selector';
 
 @Injectable()
 export class CoreEffects {
+  @Effect()
+  getPaises$ = this.actions$.pipe(
+    ofType<PaisesGet>(PaisesGet.type),
+    map(() => new PaisesSuccess(this.localidadeService.getAllPaises()))
+  );
+
   @Effect()
   locationUpdate$ = this.actions$.pipe(
     ofType('ROUTER_NAVIGATION'),
@@ -23,7 +39,9 @@ export class CoreEffects {
       // @ts-ignore
       return action.payload.routerState;
     }),
-    switchMap(state => {
+    combineLatest(this.store.pipe(select(getPais))),
+    filter(([state, pais]) => !pais || !pais.slug || pais.slug !== state.params.pais),
+    switchMap(([state, pais]) => {
       const { params } = state;
       return [new PaisLoading(params.pais)];
     })
@@ -105,6 +123,7 @@ export class CoreEffects {
   constructor(
     private actions$: Actions,
     private localidadeService: LocalidadeService,
-    private paisesService: PaisesService
+    private paisesService: PaisesService,
+    private store: Store<IAppState>
   ) {}
 }

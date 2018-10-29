@@ -16,12 +16,14 @@ export class ResultadosEffects {
     ofType<ResultadosGet>(ResultadosGet.type),
     flatMap(({ payload }) => this.paisesService.getResultados(payload)),
     map(response => {
-      const resultados = {
-        [response.localidade]: response.res.reduce(
-          (agg, item) => ({ ...agg, [item.indicador]: item.res }),
+      const resultados = response.reduce((agg, item) => {
+        agg[item.localidade] = item.res.reduce(
+          (valores, obj) => ({ ...valores, [obj.indicador]: obj.res }),
           {}
-        )
-      };
+        );
+        return agg;
+      }, {});
+
       return resultados;
     }),
     map(resultados => new ResultadosSuccess(resultados)),

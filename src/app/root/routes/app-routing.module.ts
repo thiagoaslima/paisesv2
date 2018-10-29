@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { IndicadoresGuard } from '@root/guards/indicadores.guard';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: 'app/home/home.module#HomeModule'
+    loadChildren: 'app/home/home.module#HomeModule',
   },
   {
     path: 'mapa',
@@ -20,6 +21,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [IndicadoresGuard]
 })
 export class AppRoutingModule {}

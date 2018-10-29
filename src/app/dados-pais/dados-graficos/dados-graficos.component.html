@@ -1,9 +1,9 @@
 <!--cards container-->
 <div class="dados-pais__cards-container">
-    <paises-card [pais]="pais$ | async" [titulo]="ECONOMIA" [dados]="economia$ | async"></paises-card>
-    <paises-card [pais]="pais$ | async" [titulo]="SOCIAIS" [dados]="sociais$ | async"></paises-card>
-    <paises-card [pais]="pais$ | async" [titulo]="AMBIENTE" [dados]="ambiente$ | async"></paises-card>
-    <paises-card [pais]="pais$ | async" [titulo]="POPULACAO" [dados]="populacao$ | async"></paises-card>
-    <paises-card [pais]="pais$ | async" [titulo]="REDES" [dados]="redes$ | async"></paises-card>
-    <paises-card [pais]="pais$ | async" [titulo]="SAUDE" [dados]="saude$ | async"></paises-card>
+    <paises-card [pais]="pais$ | async" [tema]="(temas$ | async)?.economia" [titulo]="ECONOMIA" [dados]="economia$ | async"></paises-card>
+    <paises-card [pais]="pais$ | async" [tema]="(temas$ | async)?.sociais" [titulo]="SOCIAIS" [dados]="sociais$ | async"></paises-card>
+    <paises-card [pais]="pais$ | async" [tema]="(temas$ | async)?.ambiente" [titulo]="AMBIENTE" [dados]="ambiente$ | async"></paises-card>
+    <paises-card [pais]="pais$ | async" [tema]="(temas$ | async)?.populacao" [titulo]="POPULACAO" [dados]="populacao$ | async"></paises-card>
+    <paises-card [pais]="pais$ | async" [tema]="(temas$ | async)?.redes" [titulo]="REDES" [dados]="redes$ | async"></paises-card>
+    <paises-card [pais]="pais$ | async" [tema]="(temas$ | async)?.saude" [titulo]="SAUDE" [dados]="saude$ | async"></paises-card>
 </div>

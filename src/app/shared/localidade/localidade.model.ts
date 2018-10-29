@@ -4,7 +4,8 @@ export interface Localidade {
   tipo: string;
   slug: string;
   codigo: string;
-  nome: {
+  nome?: string;
+  nomes: {
     en: string;
     es: string;
     pt: string;
@@ -17,7 +18,8 @@ export interface Pais extends Localidade {
   slug: string;
   sigla: string;
   sigla3: string;
-  nome: {
+  nome?: string;
+  nomes: {
     en: string;
     es: string;
     pt: string;
@@ -33,6 +35,7 @@ export interface Pais extends Localidade {
     regiao?: number | string;
     subregiao?: number | string;
   };
+  currentSlug?: string;
   slugs: {
     en: string;
     es: string;

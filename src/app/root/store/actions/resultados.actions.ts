@@ -10,7 +10,7 @@ export enum ResultadosTypeActions {
 export class ResultadosGet implements Action {
   static readonly type = ResultadosTypeActions.RESULTADOS_GET;
   readonly type = ResultadosTypeActions.RESULTADOS_GET;
-  constructor(public payload: string) {}
+  constructor(public payload: string[]) {}
 }
 export class ResultadosSuccess implements Action {
   static readonly type = ResultadosTypeActions.RESULTADOS_GET_SUCCESS;

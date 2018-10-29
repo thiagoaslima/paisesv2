@@ -20,6 +20,8 @@ export class CardComponent {
   @Input()
   pais: Pais;
 
+  @Input() tema;
+
   @Input()
   titulo = '';
 

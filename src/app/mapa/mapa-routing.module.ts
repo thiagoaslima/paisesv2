@@ -3,11 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { MapaPageComponent } from './mapa-page/mapa-page.component';
 import { SinteseMapaComponent } from './sintese-mapa/sintese-mapa.component';
 import { SinteseMapaGuard } from './guards/sintese-mapa.guard';
-import { PaisesCompararComponent } from './comparar/comparar.component';
+import { IndicadoresGuard } from '@root/guards/indicadores.guard';
+import { ResultadosCompararGuard } from '@root/guards/resultados-comparar.guard';
+import { CompararWrapperComponent } from './comparar-wrapper/comparar-wrapper.component';
 
 const routes: Routes = [
   { path: '', component: MapaPageComponent, children: [
-    { path: 'comparar', component: PaisesCompararComponent, canActivate: []},
+    { path: 'comparar', component: CompararWrapperComponent, canActivate: [
+      IndicadoresGuard,
+      ResultadosCompararGuard
+    ]},
     { path: ':pais', component: SinteseMapaComponent, canActivate: [SinteseMapaGuard] }
   ] },
 ];
@@ -15,6 +20,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
-  providers: [SinteseMapaGuard]
+  providers: [SinteseMapaGuard, IndicadoresGuard, ResultadosCompararGuard]
 })
 export class MapaRoutingModule { }

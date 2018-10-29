@@ -67,7 +67,7 @@
                 </p>
             </div>
             <div class="card__rodape-links">
-                <botao-comparar type="comparar" class="card__rodape-buttom-comparar" [href]="'/mapa/comparar'"></botao-comparar>
+                <botao-comparar type="comparar" class="card__rodape-buttom-comparar" [href]="'/mapa/comparar'" [queryParams]="{paises: pais?.sigla, indicador: dados[graficoAtual]?.id, tema: tema?.posicao}"></botao-comparar>
                 <botao-comparar type="mapa" class="card__rodape-buttom-comparar" [href]="'/mapa/ranking/' + dados[graficoAtual]?.id + '/' + pais?.slug"></botao-comparar>
             </div>
             

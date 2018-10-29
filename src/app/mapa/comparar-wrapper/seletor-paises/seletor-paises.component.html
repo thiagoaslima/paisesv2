@@ -1,0 +1,15 @@
+<div class="comparar__seletor-pais-container">
+  <div class="comparar__filtro-pais-container">
+    <input #filtro class="comparar__filtro-pais" type="text" (input)="filtrarPaises(filtro.value)" />
+  </div>
+  <p class="comparar__filtro-info">Selecione até 5 países</p>
+  <ul class="comparar__lista-pais">
+    <ng-template ngFor let-pais [ngForOf]="listaPaises" let-i="index" [ngForTrackBy]="trackByFn">
+      <li class="comparar__lista-item-pais">
+        <input #input [attr.id]="pais.sigla" type="checkbox" [checked]="selecionados.paises.includes(pais.sigla)"
+          [disabled]="!selecionados.paises.includes(pais.sigla) && selecionados.paises.length >= 5" [value]="pais.sigla"
+          (change)="selectPais(input.value)" /> <label [attr.for]="pais.sigla">{{ pais?.nome }}</label>
+      </li>
+    </ng-template>
+  </ul>
+</div>

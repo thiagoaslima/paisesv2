@@ -167,7 +167,7 @@ export class MapaWrapperComponent {
 
     if (pais) {
       const msg =
-        pais.nome.pt +
+        pais.nomes.pt +
         (feature.properties.nota ? ` (${feature.properties.nota.pt})` : '') +
         (feature.properties.valor
           ? `<br /> <strong>${feature.properties.valor}</strong>`

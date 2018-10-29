@@ -7,7 +7,7 @@ export const localidades = {
             'slug': 'afeganistao',
             'sigla': 'AF',
             'sigla3': 'AFG',
-            'nome': {
+            'nomes': {
                 'en': 'Afghanistan',
                 'es': 'Afganistán',
                 'pt': 'Afeganistão'
@@ -38,7 +38,7 @@ export const localidades = {
             'slug': 'ilhas-alanda',
             'sigla': 'AX',
             'sigla3': 'ALA',
-            'nome': {
+            'nomes': {
                 'en': 'Åland Islands',
                 'es': 'Islas Åland',
                 'pt': 'Ilhas Alanda'
@@ -69,7 +69,7 @@ export const localidades = {
             'slug': 'albania',
             'sigla': 'AL',
             'sigla3': 'ALB',
-            'nome': {
+            'nomes': {
                 'en': 'Albania',
                 'es': 'Albania',
                 'pt': 'Albânia'
@@ -100,7 +100,7 @@ export const localidades = {
             'slug': 'argelia',
             'sigla': 'DZ',
             'sigla3': 'DZA',
-            'nome': {
+            'nomes': {
                 'en': 'Algeria',
                 'es': 'Argelia',
                 'pt': 'Argélia'
@@ -131,7 +131,7 @@ export const localidades = {
             'slug': 'samoa-americana',
             'sigla': 'AS',
             'sigla3': 'ASM',
-            'nome': {
+            'nomes': {
                 'en': 'American Samoa',
                 'es': 'Samoa Americana',
                 'pt': 'Samoa Americana'
@@ -162,7 +162,7 @@ export const localidades = {
             'slug': 'andorra',
             'sigla': 'AD',
             'sigla3': 'AND',
-            'nome': {
+            'nomes': {
                 'en': 'Andorra',
                 'es': 'Andorra',
                 'pt': 'Andorra'
@@ -193,7 +193,7 @@ export const localidades = {
             'slug': 'angola',
             'sigla': 'AO',
             'sigla3': 'AGO',
-            'nome': {
+            'nomes': {
                 'en': 'Angola',
                 'es': 'Angola',
                 'pt': 'Angola'
@@ -224,7 +224,7 @@ export const localidades = {
             'slug': 'anguilla',
             'sigla': 'AI',
             'sigla3': 'AIA',
-            'nome': {
+            'nomes': {
                 'en': 'Anguilla',
                 'es': 'Anguila',
                 'pt': 'Anguilla'
@@ -255,7 +255,7 @@ export const localidades = {
             'slug': 'antartida',
             'sigla': 'AQ',
             'sigla3': 'ATA',
-            'nome': {
+            'nomes': {
                 'en': 'Antarctica',
                 'es': 'Antártida',
                 'pt': 'Antártida'
@@ -286,7 +286,7 @@ export const localidades = {
             'slug': 'antigua-e-barbuda',
             'sigla': 'AG',
             'sigla3': 'ATG',
-            'nome': {
+            'nomes': {
                 'en': 'Antigua and Barbuda',
                 'es': 'Antigua y Barbuda',
                 'pt': 'Antígua e Barbuda'
@@ -317,7 +317,7 @@ export const localidades = {
             'slug': 'argentina',
             'sigla': 'AR',
             'sigla3': 'ARG',
-            'nome': {
+            'nomes': {
                 'en': 'Argentina',
                 'es': 'Argentina',
                 'pt': 'Argentina'
@@ -348,7 +348,7 @@ export const localidades = {
             'slug': 'armenia',
             'sigla': 'AM',
             'sigla3': 'ARM',
-            'nome': {
+            'nomes': {
                 'en': 'Armenia',
                 'es': 'Armenia',
                 'pt': 'Armênia'
@@ -379,7 +379,7 @@ export const localidades = {
             'slug': 'aruba',
             'sigla': 'AW',
             'sigla3': 'ABW',
-            'nome': {
+            'nomes': {
                 'en': 'Aruba',
                 'es': 'Aruba',
                 'pt': 'Aruba'
@@ -410,7 +410,7 @@ export const localidades = {
             'slug': 'australia',
             'sigla': 'AU',
             'sigla3': 'AUS',
-            'nome': {
+            'nomes': {
                 'en': 'Australia',
                 'es': 'Australia',
                 'pt': 'Austrália'
@@ -441,7 +441,7 @@ export const localidades = {
             'slug': 'austria',
             'sigla': 'AT',
             'sigla3': 'AUT',
-            'nome': {
+            'nomes': {
                 'en': 'Austria',
                 'es': 'Austria',
                 'pt': 'Áustria'
@@ -472,7 +472,7 @@ export const localidades = {
             'slug': 'azerbaijao',
             'sigla': 'AZ',
             'sigla3': 'AZE',
-            'nome': {
+            'nomes': {
                 'en': 'Azerbaijan',
                 'es': 'Azerbaiyán',
                 'pt': 'Azerbaijão'
@@ -503,7 +503,7 @@ export const localidades = {
             'slug': 'bahamas',
             'sigla': 'BS',
             'sigla3': 'BHS',
-            'nome': {
+            'nomes': {
                 'en': 'Bahamas',
                 'es': 'Bahamas',
                 'pt': 'Bahamas'
@@ -536,7 +536,7 @@ export const localidades = {
             'slug': 'barein',
             'sigla': 'BH',
             'sigla3': 'BHR',
-            'nome': {
+            'nomes': {
                 'en': 'Bahrain',
                 'es': 'Bahrein',
                 'pt': 'Barein'
@@ -567,7 +567,7 @@ export const localidades = {
             'slug': 'bangladesh',
             'sigla': 'BD',
             'sigla3': 'BGD',
-            'nome': {
+            'nomes': {
                 'en': 'Bangladesh',
                 'es': 'Bangladesh',
                 'pt': 'Bangladesh'
@@ -598,7 +598,7 @@ export const localidades = {
             'slug': 'barbados',
             'sigla': 'BB',
             'sigla3': 'BRB',
-            'nome': {
+            'nomes': {
                 'en': 'Barbados',
                 'es': 'Barbados',
                 'pt': 'Barbados'
@@ -629,7 +629,7 @@ export const localidades = {
             'slug': 'bielorussia',
             'sigla': 'BY',
             'sigla3': 'BLR',
-            'nome': {
+            'nomes': {
                 'en': 'Belarus',
                 'es': 'Belarús',
                 'pt': 'Bielorússia'
@@ -660,7 +660,7 @@ export const localidades = {
             'slug': 'belgica',
             'sigla': 'BE',
             'sigla3': 'BEL',
-            'nome': {
+            'nomes': {
                 'en': 'Belgium',
                 'es': 'Bélgica',
                 'pt': 'Bélgica'
@@ -691,7 +691,7 @@ export const localidades = {
             'slug': 'belize',
             'sigla': 'BZ',
             'sigla3': 'BLZ',
-            'nome': {
+            'nomes': {
                 'en': 'Belize',
                 'es': 'Belice',
                 'pt': 'Belize'
@@ -722,7 +722,7 @@ export const localidades = {
             'slug': 'benin',
             'sigla': 'BJ',
             'sigla3': 'BEN',
-            'nome': {
+            'nomes': {
                 'en': 'Benin',
                 'es': 'Benin',
                 'pt': 'Benin'
@@ -753,7 +753,7 @@ export const localidades = {
             'slug': 'bermuda',
             'sigla': 'BM',
             'sigla3': 'BMU',
-            'nome': {
+            'nomes': {
                 'en': 'Bermuda',
                 'es': 'Bermuda',
                 'pt': 'Bermuda'
@@ -784,7 +784,7 @@ export const localidades = {
             'slug': 'butao',
             'sigla': 'BT',
             'sigla3': 'BTN',
-            'nome': {
+            'nomes': {
                 'en': 'Bhutan',
                 'es': 'Bhután',
                 'pt': 'Butão'
@@ -815,7 +815,7 @@ export const localidades = {
             'slug': 'bolivia',
             'sigla': 'BO',
             'sigla3': 'BOL',
-            'nome': {
+            'nomes': {
                 'en': 'Bolivia (Plurinational State of)',
                 'es': 'Bolivia (Estado Plurinacional de)',
                 'pt': 'Bolívia'
@@ -850,7 +850,7 @@ export const localidades = {
             'slug': 'bonaire-santo-eustaquio-e-saba',
             'sigla': 'BQ',
             'sigla3': 'BES',
-            'nome': {
+            'nomes': {
                 'en': 'Bonaire, Sint Eustatius and Saba',
                 'es': 'Bonaire, San Eustaquio y Saba',
                 'pt': 'Bonaire, Santo Eustáquio e Saba'
@@ -881,7 +881,7 @@ export const localidades = {
             'slug': 'bosnia-herzegovina',
             'sigla': 'BA',
             'sigla3': 'BIH',
-            'nome': {
+            'nomes': {
                 'en': 'Bosnia and Herzegovina',
                 'es': 'Bosnia y Herzegovina',
                 'pt': 'Bósnia-Herzegovina'
@@ -912,7 +912,7 @@ export const localidades = {
             'slug': 'botsuana',
             'sigla': 'BW',
             'sigla3': 'BWA',
-            'nome': {
+            'nomes': {
                 'en': 'Botswana',
                 'es': 'Botswana',
                 'pt': 'Botsuana'
@@ -943,7 +943,7 @@ export const localidades = {
             'slug': 'ilha-bouvet',
             'sigla': 'BV',
             'sigla3': 'BVT',
-            'nome': {
+            'nomes': {
                 'en': 'Bouvet Island',
                 'es': 'Isla Bouvet',
                 'pt': 'Ilha Bouvet'
@@ -974,7 +974,7 @@ export const localidades = {
             'slug': 'brasil',
             'sigla': 'BR',
             'sigla3': 'BRA',
-            'nome': {
+            'nomes': {
                 'en': 'Brazil',
                 'es': 'Brasil',
                 'pt': 'Brasil'
@@ -1005,7 +1005,7 @@ export const localidades = {
             'slug': 'territorio-britanico-do-oceano-indico',
             'sigla': 'IO',
             'sigla3': 'IOT',
-            'nome': {
+            'nomes': {
                 'en': 'British Indian Ocean Territory',
                 'es': 'Territorio Británico del Océano Índico',
                 'pt': 'Território Britânico do Oceano Índico'
@@ -1036,7 +1036,7 @@ export const localidades = {
             'slug': 'brunei',
             'sigla': 'BN',
             'sigla3': 'BRN',
-            'nome': {
+            'nomes': {
                 'en': 'Brunei Darussalam',
                 'es': 'Brunei Darussalam',
                 'pt': 'Brunei'
@@ -1073,7 +1073,7 @@ export const localidades = {
             'slug': 'bulgaria',
             'sigla': 'BG',
             'sigla3': 'BGR',
-            'nome': {
+            'nomes': {
                 'en': 'Bulgaria',
                 'es': 'Bulgaria',
                 'pt': 'Bulgária'
@@ -1104,7 +1104,7 @@ export const localidades = {
             'slug': 'burkina-faso',
             'sigla': 'BF',
             'sigla3': 'BFA',
-            'nome': {
+            'nomes': {
                 'en': 'Burkina Faso',
                 'es': 'Burkina Faso',
                 'pt': 'Burkina Faso'
@@ -1135,7 +1135,7 @@ export const localidades = {
             'slug': 'burundi',
             'sigla': 'BI',
             'sigla3': 'BDI',
-            'nome': {
+            'nomes': {
                 'en': 'Burundi',
                 'es': 'Burundi',
                 'pt': 'Burundi'
@@ -1166,7 +1166,7 @@ export const localidades = {
             'slug': 'cabo-verde',
             'sigla': 'CV',
             'sigla3': 'CPV',
-            'nome': {
+            'nomes': {
                 'en': 'Cabo Verde',
                 'es': 'Cabo Verde',
                 'pt': 'Cabo Verde'
@@ -1197,7 +1197,7 @@ export const localidades = {
             'slug': 'camboja',
             'sigla': 'KH',
             'sigla3': 'KHM',
-            'nome': {
+            'nomes': {
                 'en': 'Cambodia',
                 'es': 'Camboya',
                 'pt': 'Camboja'
@@ -1228,7 +1228,7 @@ export const localidades = {
             'slug': 'camaroes',
             'sigla': 'CM',
             'sigla3': 'CMR',
-            'nome': {
+            'nomes': {
                 'en': 'Cameroon',
                 'es': 'Camerún',
                 'pt': 'Camarões'
@@ -1259,7 +1259,7 @@ export const localidades = {
             'slug': 'canada',
             'sigla': 'CA',
             'sigla3': 'CAN',
-            'nome': {
+            'nomes': {
                 'en': 'Canada',
                 'es': 'Canadá',
                 'pt': 'Canadá'
@@ -1290,7 +1290,7 @@ export const localidades = {
             'slug': 'ilhas-cayman',
             'sigla': 'KY',
             'sigla3': 'CYM',
-            'nome': {
+            'nomes': {
                 'en': 'Cayman Islands',
                 'es': 'Islas Caimán',
                 'pt': 'Ilhas Cayman'
@@ -1321,7 +1321,7 @@ export const localidades = {
             'slug': 'republica-centro-africana',
             'sigla': 'CF',
             'sigla3': 'CAF',
-            'nome': {
+            'nomes': {
                 'en': 'Central African Republic',
                 'es': 'República Centroafricana',
                 'pt': 'República Centro Africana'
@@ -1352,7 +1352,7 @@ export const localidades = {
             'slug': 'chade',
             'sigla': 'TD',
             'sigla3': 'TCD',
-            'nome': {
+            'nomes': {
                 'en': 'Chad',
                 'es': 'Chad',
                 'pt': 'Chade'
@@ -1383,7 +1383,7 @@ export const localidades = {
             'slug': 'chile',
             'sigla': 'CL',
             'sigla3': 'CHL',
-            'nome': {
+            'nomes': {
                 'en': 'Chile',
                 'es': 'Chile',
                 'pt': 'Chile'
@@ -1414,7 +1414,7 @@ export const localidades = {
             'slug': 'china',
             'sigla': 'CN',
             'sigla3': 'CHN',
-            'nome': {
+            'nomes': {
                 'en': 'China',
                 'es': 'China',
                 'pt': 'China'
@@ -1451,7 +1451,7 @@ export const localidades = {
             'slug': 'ilha-christmas',
             'sigla': 'CX',
             'sigla3': 'CXR',
-            'nome': {
+            'nomes': {
                 'en': 'Christmas Island',
                 'es': 'Isla de Navidad',
                 'pt': 'Ilha Christmas'
@@ -1482,7 +1482,7 @@ export const localidades = {
             'slug': 'ilhas-cocos-keeling',
             'sigla': 'CC',
             'sigla3': 'CCK',
-            'nome': {
+            'nomes': {
                 'en': 'Cocos (Keeling) Islands',
                 'es': 'Islas Cocos (Keeling)',
                 'pt': 'Ilhas Cocos (Keeling)'
@@ -1513,7 +1513,7 @@ export const localidades = {
             'slug': 'colombia',
             'sigla': 'CO',
             'sigla3': 'COL',
-            'nome': {
+            'nomes': {
                 'en': 'Colombia',
                 'es': 'Colombia',
                 'pt': 'Colômbia'
@@ -1544,7 +1544,7 @@ export const localidades = {
             'slug': 'comores',
             'sigla': 'KM',
             'sigla3': 'COM',
-            'nome': {
+            'nomes': {
                 'en': 'Comoros',
                 'es': 'Comoras',
                 'pt': 'Comores'
@@ -1575,7 +1575,7 @@ export const localidades = {
             'slug': 'republica-democratica-do-congo',
             'sigla': 'CD',
             'sigla3': 'COD',
-            'nome': {
+            'nomes': {
                 'en': 'Democratic Republic of the Congo',
                 'es': 'República Democrática del Congo',
                 'pt': 'República Democrática do Congo'
@@ -1608,7 +1608,7 @@ export const localidades = {
             'slug': 'congo',
             'sigla': 'CG',
             'sigla3': 'COG',
-            'nome': {
+            'nomes': {
                 'en': 'Congo',
                 'es': 'Congo',
                 'pt': 'Congo'
@@ -1641,7 +1641,7 @@ export const localidades = {
             'slug': 'ilhas-cook',
             'sigla': 'CK',
             'sigla3': 'COK',
-            'nome': {
+            'nomes': {
                 'en': 'Cook Islands',
                 'es': 'Islas Cook',
                 'pt': 'Ilhas Cook'
@@ -1672,7 +1672,7 @@ export const localidades = {
             'slug': 'costa-rica',
             'sigla': 'CR',
             'sigla3': 'CRI',
-            'nome': {
+            'nomes': {
                 'en': 'Costa Rica',
                 'es': 'Costa Rica',
                 'pt': 'Costa Rica'
@@ -1703,7 +1703,7 @@ export const localidades = {
             'slug': 'costa-do-marfim',
             'sigla': 'CI',
             'sigla3': 'CIV',
-            'nome': {
+            'nomes': {
                 'en': 'Côte d\'Ivoire',
                 'es': 'Côte d\'Ivoire',
                 'pt': 'Costa do Marfim'
@@ -1734,7 +1734,7 @@ export const localidades = {
             'slug': 'croacia',
             'sigla': 'HR',
             'sigla3': 'HRV',
-            'nome': {
+            'nomes': {
                 'en': 'Croatia',
                 'es': 'Croacia',
                 'pt': 'Croácia'
@@ -1765,7 +1765,7 @@ export const localidades = {
             'slug': 'cuba',
             'sigla': 'CU',
             'sigla3': 'CUB',
-            'nome': {
+            'nomes': {
                 'en': 'Cuba',
                 'es': 'Cuba',
                 'pt': 'Cuba'
@@ -1796,7 +1796,7 @@ export const localidades = {
             'slug': 'curacao',
             'sigla': 'CW',
             'sigla3': 'CUW',
-            'nome': {
+            'nomes': {
                 'en': 'Curaçao',
                 'es': 'Curaçao',
                 'pt': 'Curaçao'
@@ -1827,7 +1827,7 @@ export const localidades = {
             'slug': 'chipre',
             'sigla': 'CY',
             'sigla3': 'CYP',
-            'nome': {
+            'nomes': {
                 'en': 'Cyprus',
                 'es': 'Chipre',
                 'pt': 'Chipre'
@@ -1858,7 +1858,7 @@ export const localidades = {
             'slug': 'republica-tcheca',
             'sigla': 'CZ',
             'sigla3': 'CZE',
-            'nome': {
+            'nomes': {
                 'en': 'Czechia',
                 'es': 'Chequia',
                 'pt': 'República Tcheca'
@@ -1895,7 +1895,7 @@ export const localidades = {
             'slug': 'dinamarca',
             'sigla': 'DK',
             'sigla3': 'DNK',
-            'nome': {
+            'nomes': {
                 'en': 'Denmark',
                 'es': 'Dinamarca',
                 'pt': 'Dinamarca'
@@ -1926,7 +1926,7 @@ export const localidades = {
             'slug': 'djibouti',
             'sigla': 'DJ',
             'sigla3': 'DJI',
-            'nome': {
+            'nomes': {
                 'en': 'Djibouti',
                 'es': 'Djibouti',
                 'pt': 'Djibouti'
@@ -1957,7 +1957,7 @@ export const localidades = {
             'slug': 'dominica',
             'sigla': 'DM',
             'sigla3': 'DMA',
-            'nome': {
+            'nomes': {
                 'en': 'Dominica',
                 'es': 'Dominica',
                 'pt': 'Dominica'
@@ -1988,7 +1988,7 @@ export const localidades = {
             'slug': 'republica-dominicana',
             'sigla': 'DO',
             'sigla3': 'DOM',
-            'nome': {
+            'nomes': {
                 'en': 'Dominican Republic',
                 'es': 'República Dominicana',
                 'pt': 'República Dominicana'
@@ -2019,7 +2019,7 @@ export const localidades = {
             'slug': 'equador',
             'sigla': 'EC',
             'sigla3': 'ECU',
-            'nome': {
+            'nomes': {
                 'en': 'Ecuador',
                 'es': 'Ecuador',
                 'pt': 'Equador'
@@ -2050,7 +2050,7 @@ export const localidades = {
             'slug': 'egito',
             'sigla': 'EG',
             'sigla3': 'EGY',
-            'nome': {
+            'nomes': {
                 'en': 'Egypt',
                 'es': 'Egipto',
                 'pt': 'Egito'
@@ -2081,7 +2081,7 @@ export const localidades = {
             'slug': 'el-salvador',
             'sigla': 'SV',
             'sigla3': 'SLV',
-            'nome': {
+            'nomes': {
                 'en': 'El Salvador',
                 'es': 'El Salvador',
                 'pt': 'El Salvador'
@@ -2112,7 +2112,7 @@ export const localidades = {
             'slug': 'guine-equatorial',
             'sigla': 'GQ',
             'sigla3': 'GNQ',
-            'nome': {
+            'nomes': {
                 'en': 'Equatorial Guinea',
                 'es': 'Guinea Ecuatorial',
                 'pt': 'Guiné Equatorial'
@@ -2143,7 +2143,7 @@ export const localidades = {
             'slug': 'eritreia',
             'sigla': 'ER',
             'sigla3': 'ERI',
-            'nome': {
+            'nomes': {
                 'en': 'Eritrea',
                 'es': 'Eritrea',
                 'pt': 'Eritréia'
@@ -2174,7 +2174,7 @@ export const localidades = {
             'slug': 'estonia',
             'sigla': 'EE',
             'sigla3': 'EST',
-            'nome': {
+            'nomes': {
                 'en': 'Estonia',
                 'es': 'Estonia',
                 'pt': 'Estônia'
@@ -2205,7 +2205,7 @@ export const localidades = {
             'slug': 'etiopia',
             'sigla': 'ET',
             'sigla3': 'ETH',
-            'nome': {
+            'nomes': {
                 'en': 'Ethiopia',
                 'es': 'Etiopía',
                 'pt': 'Etiópia'
@@ -2236,7 +2236,7 @@ export const localidades = {
             'slug': 'ilhas-malvinas',
             'sigla': 'FK',
             'sigla3': 'FLK',
-            'nome': {
+            'nomes': {
                 'en': 'Falkland Islands (Malvinas)',
                 'es': 'Islas Malvinas (Falkland)',
                 'pt': 'Ilhas Malvinas'
@@ -2269,7 +2269,7 @@ export const localidades = {
             'slug': 'ilhas-faeroe',
             'sigla': 'FO',
             'sigla3': 'FRO',
-            'nome': {
+            'nomes': {
                 'en': 'Faroe Islands',
                 'es': 'Islas Feroe',
                 'pt': 'Ilhas Faeroe'
@@ -2300,7 +2300,7 @@ export const localidades = {
             'slug': 'fiji',
             'sigla': 'FJ',
             'sigla3': 'FJI',
-            'nome': {
+            'nomes': {
                 'en': 'Fiji',
                 'es': 'Fiji',
                 'pt': 'Fiji'
@@ -2331,7 +2331,7 @@ export const localidades = {
             'slug': 'finlandia',
             'sigla': 'FI',
             'sigla3': 'FIN',
-            'nome': {
+            'nomes': {
                 'en': 'Finland',
                 'es': 'Finlandia',
                 'pt': 'Finlândia'
@@ -2362,7 +2362,7 @@ export const localidades = {
             'slug': 'franca',
             'sigla': 'FR',
             'sigla3': 'FRA',
-            'nome': {
+            'nomes': {
                 'en': 'France',
                 'es': 'Francia',
                 'pt': 'França'
@@ -2393,7 +2393,7 @@ export const localidades = {
             'slug': 'guiana-francesa',
             'sigla': 'GF',
             'sigla3': 'GUF',
-            'nome': {
+            'nomes': {
                 'en': 'French Guiana',
                 'es': 'Guayana Francesa',
                 'pt': 'Guiana Francesa'
@@ -2424,7 +2424,7 @@ export const localidades = {
             'slug': 'polinesia-francesa',
             'sigla': 'PF',
             'sigla3': 'PYF',
-            'nome': {
+            'nomes': {
                 'en': 'French Polynesia',
                 'es': 'Polinesia Francesa',
                 'pt': 'Polinésia Francesa'
@@ -2455,7 +2455,7 @@ export const localidades = {
             'slug': 'terras-austrais-e-antarticas-francesas',
             'sigla': 'TF',
             'sigla3': 'ATF',
-            'nome': {
+            'nomes': {
                 'en': 'French Southern Territories',
                 'es': 'Territorio de las Tierras Australes Francesas',
                 'pt': 'Terras Austrais e Antárticas Francesas'
@@ -2486,7 +2486,7 @@ export const localidades = {
             'slug': 'gabao',
             'sigla': 'GA',
             'sigla3': 'GAB',
-            'nome': {
+            'nomes': {
                 'en': 'Gabon',
                 'es': 'Gabón',
                 'pt': 'Gabão'
@@ -2517,7 +2517,7 @@ export const localidades = {
             'slug': 'gambia',
             'sigla': 'GM',
             'sigla3': 'GMB',
-            'nome': {
+            'nomes': {
                 'en': 'Gambia',
                 'es': 'Gambia',
                 'pt': 'Gâmbia'
@@ -2550,7 +2550,7 @@ export const localidades = {
             'slug': 'georgia',
             'sigla': 'GE',
             'sigla3': 'GEO',
-            'nome': {
+            'nomes': {
                 'en': 'Georgia',
                 'es': 'Georgia',
                 'pt': 'Geórgia'
@@ -2581,7 +2581,7 @@ export const localidades = {
             'slug': 'alemanha',
             'sigla': 'DE',
             'sigla3': 'DEU',
-            'nome': {
+            'nomes': {
                 'en': 'Germany',
                 'es': 'Alemania',
                 'pt': 'Alemanha'
@@ -2612,7 +2612,7 @@ export const localidades = {
             'slug': 'gana',
             'sigla': 'GH',
             'sigla3': 'GHA',
-            'nome': {
+            'nomes': {
                 'en': 'Ghana',
                 'es': 'Ghana',
                 'pt': 'Gana'
@@ -2643,7 +2643,7 @@ export const localidades = {
             'slug': 'gibraltar',
             'sigla': 'GI',
             'sigla3': 'GIB',
-            'nome': {
+            'nomes': {
                 'en': 'Gibraltar',
                 'es': 'Gibraltar',
                 'pt': 'Gibraltar'
@@ -2674,7 +2674,7 @@ export const localidades = {
             'slug': 'grecia',
             'sigla': 'GR',
             'sigla3': 'GRC',
-            'nome': {
+            'nomes': {
                 'en': 'Greece',
                 'es': 'Grecia',
                 'pt': 'Grécia'
@@ -2705,7 +2705,7 @@ export const localidades = {
             'slug': 'groenlandia',
             'sigla': 'GL',
             'sigla3': 'GRL',
-            'nome': {
+            'nomes': {
                 'en': 'Greenland',
                 'es': 'Groenlandia',
                 'pt': 'Groenlândia'
@@ -2736,7 +2736,7 @@ export const localidades = {
             'slug': 'granada',
             'sigla': 'GD',
             'sigla3': 'GRD',
-            'nome': {
+            'nomes': {
                 'en': 'Grenada',
                 'es': 'Granada',
                 'pt': 'Granada'
@@ -2767,7 +2767,7 @@ export const localidades = {
             'slug': 'ilha-guadalupe',
             'sigla': 'GP',
             'sigla3': 'GLP',
-            'nome': {
+            'nomes': {
                 'en': 'Guadeloupe',
                 'es': 'Guadalupe',
                 'pt': 'Ilha Guadalupe'
@@ -2798,7 +2798,7 @@ export const localidades = {
             'slug': 'guam',
             'sigla': 'GU',
             'sigla3': 'GUM',
-            'nome': {
+            'nomes': {
                 'en': 'Guam',
                 'es': 'Guam',
                 'pt': 'Guam'
@@ -2829,7 +2829,7 @@ export const localidades = {
             'slug': 'guatemala',
             'sigla': 'GT',
             'sigla3': 'GTM',
-            'nome': {
+            'nomes': {
                 'en': 'Guatemala',
                 'es': 'Guatemala',
                 'pt': 'Guatemala'
@@ -2860,7 +2860,7 @@ export const localidades = {
             'slug': 'guernsey',
             'sigla': 'GG',
             'sigla3': 'GGY',
-            'nome': {
+            'nomes': {
                 'en': 'Guernsey',
                 'es': 'Guernsey',
                 'pt': 'Guernsey'
@@ -2891,7 +2891,7 @@ export const localidades = {
             'slug': 'guine',
             'sigla': 'GN',
             'sigla3': 'GIN',
-            'nome': {
+            'nomes': {
                 'en': 'Guinea',
                 'es': 'Guinea',
                 'pt': 'Guiné'
@@ -2922,7 +2922,7 @@ export const localidades = {
             'slug': 'guine-bissau',
             'sigla': 'GW',
             'sigla3': 'GNB',
-            'nome': {
+            'nomes': {
                 'en': 'Guinea-Bissau',
                 'es': 'Guinea-Bissau',
                 'pt': 'Guiné-Bissau'
@@ -2953,7 +2953,7 @@ export const localidades = {
             'slug': 'guiana',
             'sigla': 'GY',
             'sigla3': 'GUY',
-            'nome': {
+            'nomes': {
                 'en': 'Guyana',
                 'es': 'Guyana',
                 'pt': 'Guiana'
@@ -2984,7 +2984,7 @@ export const localidades = {
             'slug': 'haiti',
             'sigla': 'HT',
             'sigla3': 'HTI',
-            'nome': {
+            'nomes': {
                 'en': 'Haiti',
                 'es': 'Haití',
                 'pt': 'Haiti'
@@ -3015,7 +3015,7 @@ export const localidades = {
             'slug': 'ilha-heard-e-ilhas-mcdonald',
             'sigla': 'HM',
             'sigla3': 'HMD',
-            'nome': {
+            'nomes': {
                 'en': 'Heard Island and McDonald Islands',
                 'es': 'Islas Heard y McDonald',
                 'pt': 'Ilha Heard e Ilhas McDonald'
@@ -3046,7 +3046,7 @@ export const localidades = {
             'slug': 'vaticano',
             'sigla': 'VA',
             'sigla3': 'VAT',
-            'nome': {
+            'nomes': {
                 'en': 'Holy See',
                 'es': 'Santa Sede',
                 'pt': 'Vaticano'
@@ -3079,7 +3079,7 @@ export const localidades = {
             'slug': 'honduras',
             'sigla': 'HN',
             'sigla3': 'HND',
-            'nome': {
+            'nomes': {
                 'en': 'Honduras',
                 'es': 'Honduras',
                 'pt': 'Honduras'
@@ -3110,7 +3110,7 @@ export const localidades = {
             'slug': 'china-hong-kong',
             'sigla': 'HK',
             'sigla3': 'HKG',
-            'nome': {
+            'nomes': {
                 'en': 'China, Hong Kong Special Administrative Region',
                 'es': 'China, región administrativa especial de Hong Kong',
                 'pt': 'China, Hong Kong'
@@ -3148,7 +3148,7 @@ export const localidades = {
             'slug': 'hungria',
             'sigla': 'HU',
             'sigla3': 'HUN',
-            'nome': {
+            'nomes': {
                 'en': 'Hungary',
                 'es': 'Hungría',
                 'pt': 'Hungria'
@@ -3179,7 +3179,7 @@ export const localidades = {
             'slug': 'islandia',
             'sigla': 'IS',
             'sigla3': 'ISL',
-            'nome': {
+            'nomes': {
                 'en': 'Iceland',
                 'es': 'Islandia',
                 'pt': 'Islândia'
@@ -3210,7 +3210,7 @@ export const localidades = {
             'slug': 'india',
             'sigla': 'IN',
             'sigla3': 'IND',
-            'nome': {
+            'nomes': {
                 'en': 'India',
                 'es': 'India',
                 'pt': 'Índia'
@@ -3241,7 +3241,7 @@ export const localidades = {
             'slug': 'indonesia',
             'sigla': 'ID',
             'sigla3': 'IDN',
-            'nome': {
+            'nomes': {
                 'en': 'Indonesia',
                 'es': 'Indonesia',
                 'pt': 'Indonésia'
@@ -3272,7 +3272,7 @@ export const localidades = {
             'slug': 'ira',
             'sigla': 'IR',
             'sigla3': 'IRN',
-            'nome': {
+            'nomes': {
                 'en': 'Iran (Islamic Republic of)',
                 'es': 'Irán (República Islámica del)',
                 'pt': 'Irã'
@@ -3305,7 +3305,7 @@ export const localidades = {
             'slug': 'iraque',
             'sigla': 'IQ',
             'sigla3': 'IRQ',
-            'nome': {
+            'nomes': {
                 'en': 'Iraq',
                 'es': 'Iraq',
                 'pt': 'Iraque'
@@ -3336,7 +3336,7 @@ export const localidades = {
             'slug': 'irlanda',
             'sigla': 'IE',
             'sigla3': 'IRL',
-            'nome': {
+            'nomes': {
                 'en': 'Ireland',
                 'es': 'Irlanda',
                 'pt': 'Irlanda'
@@ -3367,7 +3367,7 @@ export const localidades = {
             'slug': 'ilha-de-man',
             'sigla': 'IM',
             'sigla3': 'IMN',
-            'nome': {
+            'nomes': {
                 'en': 'Isle of Man',
                 'es': 'Isla de Man',
                 'pt': 'Ilha de Man'
@@ -3398,7 +3398,7 @@ export const localidades = {
             'slug': 'israel',
             'sigla': 'IL',
             'sigla3': 'ISR',
-            'nome': {
+            'nomes': {
                 'en': 'Israel',
                 'es': 'Israel',
                 'pt': 'Israel'
@@ -3429,7 +3429,7 @@ export const localidades = {
             'slug': 'italia',
             'sigla': 'IT',
             'sigla3': 'ITA',
-            'nome': {
+            'nomes': {
                 'en': 'Italy',
                 'es': 'Italia',
                 'pt': 'Itália'
@@ -3460,7 +3460,7 @@ export const localidades = {
             'slug': 'jamaica',
             'sigla': 'JM',
             'sigla3': 'JAM',
-            'nome': {
+            'nomes': {
                 'en': 'Jamaica',
                 'es': 'Jamaica',
                 'pt': 'Jamaica'
@@ -3491,7 +3491,7 @@ export const localidades = {
             'slug': 'japao',
             'sigla': 'JP',
             'sigla3': 'JPN',
-            'nome': {
+            'nomes': {
                 'en': 'Japan',
                 'es': 'Japón',
                 'pt': 'Japão'
@@ -3522,7 +3522,7 @@ export const localidades = {
             'slug': 'jersey',
             'sigla': 'JE',
             'sigla3': 'JEY',
-            'nome': {
+            'nomes': {
                 'en': 'Jersey',
                 'es': 'Jersey',
                 'pt': 'Jersey'
@@ -3553,7 +3553,7 @@ export const localidades = {
             'slug': 'jordania',
             'sigla': 'JO',
             'sigla3': 'JOR',
-            'nome': {
+            'nomes': {
                 'en': 'Jordan',
                 'es': 'Jordania',
                 'pt': 'Jordânia'
@@ -3584,7 +3584,7 @@ export const localidades = {
             'slug': 'casaquistao',
             'sigla': 'KZ',
             'sigla3': 'KAZ',
-            'nome': {
+            'nomes': {
                 'en': 'Kazakhstan',
                 'es': 'Kazajstán',
                 'pt': 'Casaquistão'
@@ -3615,7 +3615,7 @@ export const localidades = {
             'slug': 'quenia',
             'sigla': 'KE',
             'sigla3': 'KEN',
-            'nome': {
+            'nomes': {
                 'en': 'Kenya',
                 'es': 'Kenya',
                 'pt': 'Quênia'
@@ -3646,7 +3646,7 @@ export const localidades = {
             'slug': 'kiribati',
             'sigla': 'KI',
             'sigla3': 'KIR',
-            'nome': {
+            'nomes': {
                 'en': 'Kiribati',
                 'es': 'Kiribati',
                 'pt': 'Kiribati'
@@ -3677,7 +3677,7 @@ export const localidades = {
             'slug': 'coreia-do-norte',
             'sigla': 'KP',
             'sigla3': 'PRK',
-            'nome': {
+            'nomes': {
                 'en': 'Democratic People\'s Republic of Korea',
                 'es': 'República Popular Democrática de Corea',
                 'pt': 'Coréia do Norte'
@@ -3710,7 +3710,7 @@ export const localidades = {
             'slug': 'coreia-do-sul',
             'sigla': 'KR',
             'sigla3': 'KOR',
-            'nome': {
+            'nomes': {
                 'en': 'Republic of Korea',
                 'es': 'República de Corea',
                 'pt': 'Coréia do Sul'
@@ -3744,7 +3744,7 @@ export const localidades = {
             'slug': 'kuwait',
             'sigla': 'KW',
             'sigla3': 'KWT',
-            'nome': {
+            'nomes': {
                 'en': 'Kuwait',
                 'es': 'Kuwait',
                 'pt': 'Kuwait'
@@ -3775,7 +3775,7 @@ export const localidades = {
             'slug': 'quirguistao',
             'sigla': 'KG',
             'sigla3': 'KGZ',
-            'nome': {
+            'nomes': {
                 'en': 'Kyrgyzstan',
                 'es': 'Kirguistán',
                 'pt': 'Quirguistão'
@@ -3806,7 +3806,7 @@ export const localidades = {
             'slug': 'laos',
             'sigla': 'LA',
             'sigla3': 'LAO',
-            'nome': {
+            'nomes': {
                 'en': 'Lao People\'s Democratic Republic',
                 'es': 'República Democrática Popular Lao',
                 'pt': 'Laos'
@@ -3839,7 +3839,7 @@ export const localidades = {
             'slug': 'letonia',
             'sigla': 'LV',
             'sigla3': 'LVA',
-            'nome': {
+            'nomes': {
                 'en': 'Latvia',
                 'es': 'Letonia',
                 'pt': 'Letônia'
@@ -3870,7 +3870,7 @@ export const localidades = {
             'slug': 'libano',
             'sigla': 'LB',
             'sigla3': 'LBN',
-            'nome': {
+            'nomes': {
                 'en': 'Lebanon',
                 'es': 'Líbano',
                 'pt': 'Líbano'
@@ -3901,7 +3901,7 @@ export const localidades = {
             'slug': 'lesoto',
             'sigla': 'LS',
             'sigla3': 'LSO',
-            'nome': {
+            'nomes': {
                 'en': 'Lesotho',
                 'es': 'Lesotho',
                 'pt': 'Lesoto'
@@ -3932,7 +3932,7 @@ export const localidades = {
             'slug': 'liberia',
             'sigla': 'LR',
             'sigla3': 'LBR',
-            'nome': {
+            'nomes': {
                 'en': 'Liberia',
                 'es': 'Liberia',
                 'pt': 'Libéria'
@@ -3963,7 +3963,7 @@ export const localidades = {
             'slug': 'libia',
             'sigla': 'LY',
             'sigla3': 'LBY',
-            'nome': {
+            'nomes': {
                 'en': 'Libya',
                 'es': 'Libia',
                 'pt': 'Líbia'
@@ -3994,7 +3994,7 @@ export const localidades = {
             'slug': 'liechtenstein',
             'sigla': 'LI',
             'sigla3': 'LIE',
-            'nome': {
+            'nomes': {
                 'en': 'Liechtenstein',
                 'es': 'Liechtenstein',
                 'pt': 'Liechtenstein'
@@ -4025,7 +4025,7 @@ export const localidades = {
             'slug': 'lituania',
             'sigla': 'LT',
             'sigla3': 'LTU',
-            'nome': {
+            'nomes': {
                 'en': 'Lithuania',
                 'es': 'Lituania',
                 'pt': 'Lituânia'
@@ -4056,7 +4056,7 @@ export const localidades = {
             'slug': 'luxemburgo',
             'sigla': 'LU',
             'sigla3': 'LUX',
-            'nome': {
+            'nomes': {
                 'en': 'Luxembourg',
                 'es': 'Luxemburgo',
                 'pt': 'Luxemburgo'
@@ -4087,7 +4087,7 @@ export const localidades = {
             'slug': 'china-macao',
             'sigla': 'MO',
             'sigla3': 'MAC',
-            'nome': {
+            'nomes': {
                 'en': 'China, Macao Special Administrative Region',
                 'es': 'China, región administrativa especial de Macao',
                 'pt': 'China, Macao'
@@ -4118,7 +4118,7 @@ export const localidades = {
             'slug': 'macedonia',
             'sigla': 'MK',
             'sigla3': 'MKD',
-            'nome': {
+            'nomes': {
                 'en': 'The former Yugoslav Republic of Macedonia',
                 'es': 'ex República Yugoslava de Macedonia',
                 'pt': 'Macedônia'
@@ -4151,7 +4151,7 @@ export const localidades = {
             'slug': 'madagascar',
             'sigla': 'MG',
             'sigla3': 'MDG',
-            'nome': {
+            'nomes': {
                 'en': 'Madagascar',
                 'es': 'Madagascar',
                 'pt': 'Madagáscar'
@@ -4182,7 +4182,7 @@ export const localidades = {
             'slug': 'malaui',
             'sigla': 'MW',
             'sigla3': 'MWI',
-            'nome': {
+            'nomes': {
                 'en': 'Malawi',
                 'es': 'Malawi',
                 'pt': 'Malauí'
@@ -4213,7 +4213,7 @@ export const localidades = {
             'slug': 'malasia',
             'sigla': 'MY',
             'sigla3': 'MYS',
-            'nome': {
+            'nomes': {
                 'en': 'Malaysia',
                 'es': 'Malasia',
                 'pt': 'Malásia'
@@ -4244,7 +4244,7 @@ export const localidades = {
             'slug': 'maldivas',
             'sigla': 'MV',
             'sigla3': 'MDV',
-            'nome': {
+            'nomes': {
                 'en': 'Maldives',
                 'es': 'Maldivas',
                 'pt': 'Maldivas'
@@ -4275,7 +4275,7 @@ export const localidades = {
             'slug': 'mali',
             'sigla': 'ML',
             'sigla3': 'MLI',
-            'nome': {
+            'nomes': {
                 'en': 'Mali',
                 'es': 'Malí',
                 'pt': 'Mali'
@@ -4306,7 +4306,7 @@ export const localidades = {
             'slug': 'malta',
             'sigla': 'MT',
             'sigla3': 'MLT',
-            'nome': {
+            'nomes': {
                 'en': 'Malta',
                 'es': 'Malta',
                 'pt': 'Malta'
@@ -4337,7 +4337,7 @@ export const localidades = {
             'slug': 'ilhas-marshall',
             'sigla': 'MH',
             'sigla3': 'MHL',
-            'nome': {
+            'nomes': {
                 'en': 'Marshall Islands',
                 'es': 'Islas Marshall',
                 'pt': 'Ilhas Marshall'
@@ -4368,7 +4368,7 @@ export const localidades = {
             'slug': 'martinica',
             'sigla': 'MQ',
             'sigla3': 'MTQ',
-            'nome': {
+            'nomes': {
                 'en': 'Martinique',
                 'es': 'Martinica',
                 'pt': 'Martinica'
@@ -4399,7 +4399,7 @@ export const localidades = {
             'slug': 'mauritania',
             'sigla': 'MR',
             'sigla3': 'MRT',
-            'nome': {
+            'nomes': {
                 'en': 'Mauritania',
                 'es': 'Mauritania',
                 'pt': 'Mauritânia'
@@ -4430,7 +4430,7 @@ export const localidades = {
             'slug': 'mauricio',
             'sigla': 'MU',
             'sigla3': 'MUS',
-            'nome': {
+            'nomes': {
                 'en': 'Mauritius',
                 'es': 'Mauricio',
                 'pt': 'Maurício'
@@ -4461,7 +4461,7 @@ export const localidades = {
             'slug': 'mayotte',
             'sigla': 'YT',
             'sigla3': 'MYT',
-            'nome': {
+            'nomes': {
                 'en': 'Mayotte',
                 'es': 'Mayotte',
                 'pt': 'Mayotte'
@@ -4492,7 +4492,7 @@ export const localidades = {
             'slug': 'mexico',
             'sigla': 'MX',
             'sigla3': 'MEX',
-            'nome': {
+            'nomes': {
                 'en': 'Mexico',
                 'es': 'México',
                 'pt': 'México'
@@ -4523,7 +4523,7 @@ export const localidades = {
             'slug': 'micronesia',
             'sigla': 'FM',
             'sigla3': 'FSM',
-            'nome': {
+            'nomes': {
                 'en': 'Micronesia (Federated States of)',
                 'es': 'Micronesia (Estados Federados de)',
                 'pt': 'Micronésia'
@@ -4556,7 +4556,7 @@ export const localidades = {
             'slug': 'moldavia',
             'sigla': 'MD',
             'sigla3': 'MDA',
-            'nome': {
+            'nomes': {
                 'en': 'Republic of Moldova',
                 'es': 'República de Moldova',
                 'pt': 'Moldávia'
@@ -4590,7 +4590,7 @@ export const localidades = {
             'slug': 'monaco',
             'sigla': 'MC',
             'sigla3': 'MCO',
-            'nome': {
+            'nomes': {
                 'en': 'Monaco',
                 'es': 'Mónaco',
                 'pt': 'Mônaco'
@@ -4621,7 +4621,7 @@ export const localidades = {
             'slug': 'mongolia',
             'sigla': 'MN',
             'sigla3': 'MNG',
-            'nome': {
+            'nomes': {
                 'en': 'Mongolia',
                 'es': 'Mongolia',
                 'pt': 'Mongólia'
@@ -4652,7 +4652,7 @@ export const localidades = {
             'slug': 'montenegro',
             'sigla': 'ME',
             'sigla3': 'MNE',
-            'nome': {
+            'nomes': {
                 'en': 'Montenegro',
                 'es': 'Montenegro',
                 'pt': 'Montenegro'
@@ -4683,7 +4683,7 @@ export const localidades = {
             'slug': 'montserrat',
             'sigla': 'MS',
             'sigla3': 'MSR',
-            'nome': {
+            'nomes': {
                 'en': 'Montserrat',
                 'es': 'Montserrat',
                 'pt': 'Montserrat'
@@ -4714,7 +4714,7 @@ export const localidades = {
             'slug': 'marrocos',
             'sigla': 'MA',
             'sigla3': 'MAR',
-            'nome': {
+            'nomes': {
                 'en': 'Morocco',
                 'es': 'Marruecos',
                 'pt': 'Marrocos'
@@ -4745,7 +4745,7 @@ export const localidades = {
             'slug': 'mocambique',
             'sigla': 'MZ',
             'sigla3': 'MOZ',
-            'nome': {
+            'nomes': {
                 'en': 'Mozambique',
                 'es': 'Mozambique',
                 'pt': 'Moçambique'
@@ -4776,7 +4776,7 @@ export const localidades = {
             'slug': 'mianma',
             'sigla': 'MM',
             'sigla3': 'MMR',
-            'nome': {
+            'nomes': {
                 'en': 'Myanmar',
                 'es': 'Myanmar',
                 'pt': 'Mianma'
@@ -4813,7 +4813,7 @@ export const localidades = {
             'slug': 'namibia',
             'sigla': 'NA',
             'sigla3': 'NAM',
-            'nome': {
+            'nomes': {
                 'en': 'Namibia',
                 'es': 'Namibia',
                 'pt': 'Namíbia'
@@ -4844,7 +4844,7 @@ export const localidades = {
             'slug': 'nauru',
             'sigla': 'NR',
             'sigla3': 'NRU',
-            'nome': {
+            'nomes': {
                 'en': 'Nauru',
                 'es': 'Nauru',
                 'pt': 'Nauru'
@@ -4875,7 +4875,7 @@ export const localidades = {
             'slug': 'nepal',
             'sigla': 'NP',
             'sigla3': 'NPL',
-            'nome': {
+            'nomes': {
                 'en': 'Nepal',
                 'es': 'Nepal',
                 'pt': 'Nepal'
@@ -4906,7 +4906,7 @@ export const localidades = {
             'slug': 'holanda',
             'sigla': 'NL',
             'sigla3': 'NLD',
-            'nome': {
+            'nomes': {
                 'en': 'Netherlands',
                 'es': 'Países Bajos',
                 'pt': 'Holanda'
@@ -4937,7 +4937,7 @@ export const localidades = {
             'slug': 'nova-caledonia',
             'sigla': 'NC',
             'sigla3': 'NCL',
-            'nome': {
+            'nomes': {
                 'en': 'New Caledonia',
                 'es': 'Nueva Caledonia',
                 'pt': 'Nova Caledônia'
@@ -4968,7 +4968,7 @@ export const localidades = {
             'slug': 'nova-zelandia',
             'sigla': 'NZ',
             'sigla3': 'NZL',
-            'nome': {
+            'nomes': {
                 'en': 'New Zealand',
                 'es': 'Nueva Zelandia',
                 'pt': 'Nova Zelândia'
@@ -4999,7 +4999,7 @@ export const localidades = {
             'slug': 'nicaragua',
             'sigla': 'NI',
             'sigla3': 'NIC',
-            'nome': {
+            'nomes': {
                 'en': 'Nicaragua',
                 'es': 'Nicaragua',
                 'pt': 'Nicarágua'
@@ -5030,7 +5030,7 @@ export const localidades = {
             'slug': 'niger',
             'sigla': 'NE',
             'sigla3': 'NER',
-            'nome': {
+            'nomes': {
                 'en': 'Niger',
                 'es': 'Níger',
                 'pt': 'Níger'
@@ -5061,7 +5061,7 @@ export const localidades = {
             'slug': 'nigeria',
             'sigla': 'NG',
             'sigla3': 'NGA',
-            'nome': {
+            'nomes': {
                 'en': 'Nigeria',
                 'es': 'Nigeria',
                 'pt': 'Nigéria'
@@ -5092,7 +5092,7 @@ export const localidades = {
             'slug': 'niue',
             'sigla': 'NU',
             'sigla3': 'NIU',
-            'nome': {
+            'nomes': {
                 'en': 'Niue',
                 'es': 'Niue',
                 'pt': 'Niue'
@@ -5123,7 +5123,7 @@ export const localidades = {
             'slug': 'ilha-norfolk',
             'sigla': 'NF',
             'sigla3': 'NFK',
-            'nome': {
+            'nomes': {
                 'en': 'Norfolk Island',
                 'es': 'Islas Norfolk',
                 'pt': 'Ilha Norfolk'
@@ -5154,7 +5154,7 @@ export const localidades = {
             'slug': 'ilhas-marianas',
             'sigla': 'MP',
             'sigla3': 'MNP',
-            'nome': {
+            'nomes': {
                 'en': 'Northern Mariana Islands',
                 'es': 'Islas Marianas Septentrionales',
                 'pt': 'Ilhas Marianas'
@@ -5185,7 +5185,7 @@ export const localidades = {
             'slug': 'noruega',
             'sigla': 'NO',
             'sigla3': 'NOR',
-            'nome': {
+            'nomes': {
                 'en': 'Norway',
                 'es': 'Noruega',
                 'pt': 'Noruega'
@@ -5216,7 +5216,7 @@ export const localidades = {
             'slug': 'oma',
             'sigla': 'OM',
             'sigla3': 'OMN',
-            'nome': {
+            'nomes': {
                 'en': 'Oman',
                 'es': 'Omán',
                 'pt': 'Omã'
@@ -5247,7 +5247,7 @@ export const localidades = {
             'slug': 'paquistao',
             'sigla': 'PK',
             'sigla3': 'PAK',
-            'nome': {
+            'nomes': {
                 'en': 'Pakistan',
                 'es': 'Pakistán',
                 'pt': 'Paquistão'
@@ -5278,7 +5278,7 @@ export const localidades = {
             'slug': 'palau',
             'sigla': 'PW',
             'sigla3': 'PLW',
-            'nome': {
+            'nomes': {
                 'en': 'Palau',
                 'es': 'Palau',
                 'pt': 'Palau'
@@ -5309,7 +5309,7 @@ export const localidades = {
             'slug': 'palestina',
             'sigla': 'PS',
             'sigla3': 'PSE',
-            'nome': {
+            'nomes': {
                 'en': 'State of Palestine',
                 'es': 'Estado de Palestina',
                 'pt': 'Palestina'
@@ -5340,7 +5340,7 @@ export const localidades = {
             'slug': 'panama',
             'sigla': 'PA',
             'sigla3': 'PAN',
-            'nome': {
+            'nomes': {
                 'en': 'Panama',
                 'es': 'Panamá',
                 'pt': 'Panamá'
@@ -5371,7 +5371,7 @@ export const localidades = {
             'slug': 'papua-nova-guine',
             'sigla': 'PG',
             'sigla3': 'PNG',
-            'nome': {
+            'nomes': {
                 'en': 'Papua New Guinea',
                 'es': 'Papua Nueva Guinea',
                 'pt': 'Papua Nova Guiné'
@@ -5402,7 +5402,7 @@ export const localidades = {
             'slug': 'paraguai',
             'sigla': 'PY',
             'sigla3': 'PRY',
-            'nome': {
+            'nomes': {
                 'en': 'Paraguay',
                 'es': 'Paraguay',
                 'pt': 'Paraguai'
@@ -5433,7 +5433,7 @@ export const localidades = {
             'slug': 'peru',
             'sigla': 'PE',
             'sigla3': 'PER',
-            'nome': {
+            'nomes': {
                 'en': 'Peru',
                 'es': 'Perú',
                 'pt': 'Peru'
@@ -5464,7 +5464,7 @@ export const localidades = {
             'slug': 'filipinas',
             'sigla': 'PH',
             'sigla3': 'PHL',
-            'nome': {
+            'nomes': {
                 'en': 'Philippines',
                 'es': 'Filipinas',
                 'pt': 'Filipinas'
@@ -5495,7 +5495,7 @@ export const localidades = {
             'slug': 'pitcairn',
             'sigla': 'PN',
             'sigla3': 'PCN',
-            'nome': {
+            'nomes': {
                 'en': 'Pitcairn',
                 'es': 'Pitcairn',
                 'pt': 'Pitcairn'
@@ -5528,7 +5528,7 @@ export const localidades = {
             'slug': 'polonia',
             'sigla': 'PL',
             'sigla3': 'POL',
-            'nome': {
+            'nomes': {
                 'en': 'Poland',
                 'es': 'Polonia',
                 'pt': 'Polônia'
@@ -5559,7 +5559,7 @@ export const localidades = {
             'slug': 'portugal',
             'sigla': 'PT',
             'sigla3': 'PRT',
-            'nome': {
+            'nomes': {
                 'en': 'Portugal',
                 'es': 'Portugal',
                 'pt': 'Portugal'
@@ -5590,7 +5590,7 @@ export const localidades = {
             'slug': 'porto-rico',
             'sigla': 'PR',
             'sigla3': 'PRI',
-            'nome': {
+            'nomes': {
                 'en': 'Puerto Rico',
                 'es': 'Puerto Rico',
                 'pt': 'Porto Rico'
@@ -5621,7 +5621,7 @@ export const localidades = {
             'slug': 'catar',
             'sigla': 'QA',
             'sigla3': 'QAT',
-            'nome': {
+            'nomes': {
                 'en': 'Qatar',
                 'es': 'Qatar',
                 'pt': 'Catar'
@@ -5652,7 +5652,7 @@ export const localidades = {
             'slug': 'ilha-reuniao',
             'sigla': 'RE',
             'sigla3': 'REU',
-            'nome': {
+            'nomes': {
                 'en': 'Réunion',
                 'es': 'Reunión',
                 'pt': 'Ilha Reunião'
@@ -5683,7 +5683,7 @@ export const localidades = {
             'slug': 'romenia',
             'sigla': 'RO',
             'sigla3': 'ROU',
-            'nome': {
+            'nomes': {
                 'en': 'Romania',
                 'es': 'Rumania',
                 'pt': 'Romênia'
@@ -5714,7 +5714,7 @@ export const localidades = {
             'slug': 'russia-federacao-russa',
             'sigla': 'RU',
             'sigla3': 'RUS',
-            'nome': {
+            'nomes': {
                 'en': 'Russian Federation',
                 'es': 'Federación de Rusia',
                 'pt': 'Rússia (Federação Russa)'
@@ -5747,7 +5747,7 @@ export const localidades = {
             'slug': 'ruanda',
             'sigla': 'RW',
             'sigla3': 'RWA',
-            'nome': {
+            'nomes': {
                 'en': 'Rwanda',
                 'es': 'Rwanda',
                 'pt': 'Ruanda'
@@ -5778,7 +5778,7 @@ export const localidades = {
             'slug': 'sao-bartolomeu',
             'sigla': 'BL',
             'sigla3': 'BLM',
-            'nome': {
+            'nomes': {
                 'en': 'Saint Barthélemy',
                 'es': 'San Bartolomé',
                 'pt': 'São Bartolomeu'
@@ -5809,7 +5809,7 @@ export const localidades = {
             'slug': 'santa-helena',
             'sigla': 'SH',
             'sigla3': 'SHN',
-            'nome': {
+            'nomes': {
                 'en': 'Saint Helena',
                 'es': 'Santa Elena',
                 'pt': 'Santa Helena'
@@ -5842,7 +5842,7 @@ export const localidades = {
             'slug': 'sao-cristovao-e-nevis',
             'sigla': 'KN',
             'sigla3': 'KNA',
-            'nome': {
+            'nomes': {
                 'en': 'Saint Kitts and Nevis',
                 'es': 'Saint Kitts y Nevis',
                 'pt': 'São Cristóvão e Nevis'
@@ -5873,7 +5873,7 @@ export const localidades = {
             'slug': 'santa-lucia',
             'sigla': 'LC',
             'sigla3': 'LCA',
-            'nome': {
+            'nomes': {
                 'en': 'Saint Lucia',
                 'es': 'Santa Lucía',
                 'pt': 'Santa Lúcia'
@@ -5904,7 +5904,7 @@ export const localidades = {
             'slug': 'saint-martin-parte-francesa',
             'sigla': 'MF',
             'sigla3': 'MAF',
-            'nome': {
+            'nomes': {
                 'en': 'Saint Martin (French Part)',
                 'es': 'San Martín (parte francesa)',
                 'pt': 'Saint Martin (parte francesa)'
@@ -5937,7 +5937,7 @@ export const localidades = {
             'slug': 'saint-pierre-e-miquelon',
             'sigla': 'PM',
             'sigla3': 'SPM',
-            'nome': {
+            'nomes': {
                 'en': 'Saint Pierre and Miquelon',
                 'es': 'Saint Pierre y Miquelon',
                 'pt': 'Saint Pierre e Miquelon'
@@ -5968,7 +5968,7 @@ export const localidades = {
             'slug': 'sao-vicente-e-granadinas',
             'sigla': 'VC',
             'sigla3': 'VCT',
-            'nome': {
+            'nomes': {
                 'en': 'Saint Vincent and the Grenadines',
                 'es': 'San Vicente y las Granadinas',
                 'pt': 'São Vicente e Granadinas'
@@ -5999,7 +5999,7 @@ export const localidades = {
             'slug': 'samoa',
             'sigla': 'WS',
             'sigla3': 'WSM',
-            'nome': {
+            'nomes': {
                 'en': 'Samoa',
                 'es': 'Samoa',
                 'pt': 'Samoa'
@@ -6030,7 +6030,7 @@ export const localidades = {
             'slug': 'san-marino',
             'sigla': 'SM',
             'sigla3': 'SMR',
-            'nome': {
+            'nomes': {
                 'en': 'San Marino',
                 'es': 'San Marino',
                 'pt': 'San Marino'
@@ -6061,7 +6061,7 @@ export const localidades = {
             'slug': 'sao-tome-e-principe',
             'sigla': 'ST',
             'sigla3': 'STP',
-            'nome': {
+            'nomes': {
                 'en': 'Sao Tome and Principe',
                 'es': 'Santo Tomé y Príncipe',
                 'pt': 'São Tome e Príncipe'
@@ -6092,7 +6092,7 @@ export const localidades = {
             'slug': 'arabia-saudita',
             'sigla': 'SA',
             'sigla3': 'SAU',
-            'nome': {
+            'nomes': {
                 'en': 'Saudi Arabia',
                 'es': 'Arabia Saudita',
                 'pt': 'Arábia Saudita'
@@ -6123,7 +6123,7 @@ export const localidades = {
             'slug': 'senegal',
             'sigla': 'SN',
             'sigla3': 'SEN',
-            'nome': {
+            'nomes': {
                 'en': 'Senegal',
                 'es': 'Senegal',
                 'pt': 'Senegal'
@@ -6154,7 +6154,7 @@ export const localidades = {
             'slug': 'servia',
             'sigla': 'RS',
             'sigla3': 'SRB',
-            'nome': {
+            'nomes': {
                 'en': 'Serbia',
                 'es': 'Serbia',
                 'pt': 'Sérvia'
@@ -6185,7 +6185,7 @@ export const localidades = {
             'slug': 'seichelles',
             'sigla': 'SC',
             'sigla3': 'SYC',
-            'nome': {
+            'nomes': {
                 'en': 'Seychelles',
                 'es': 'Seychelles',
                 'pt': 'Seichelles'
@@ -6216,7 +6216,7 @@ export const localidades = {
             'slug': 'serra-leoa',
             'sigla': 'SL',
             'sigla3': 'SLE',
-            'nome': {
+            'nomes': {
                 'en': 'Sierra Leone',
                 'es': 'Sierra Leona',
                 'pt': 'Serra Leoa'
@@ -6247,7 +6247,7 @@ export const localidades = {
             'slug': 'cingapura',
             'sigla': 'SG',
             'sigla3': 'SGP',
-            'nome': {
+            'nomes': {
                 'en': 'Singapore',
                 'es': 'Singapur',
                 'pt': 'Cingapura'
@@ -6278,7 +6278,7 @@ export const localidades = {
             'slug': 'saint-martin-parte-holandesa',
             'sigla': 'SX',
             'sigla3': 'SXM',
-            'nome': {
+            'nomes': {
                 'en': 'Sint Maarten (Dutch part)',
                 'es': 'San Martín (parte holandés)',
                 'pt': 'Saint Martin (parte holandesa)'
@@ -6311,7 +6311,7 @@ export const localidades = {
             'slug': 'eslovaquia',
             'sigla': 'SK',
             'sigla3': 'SVK',
-            'nome': {
+            'nomes': {
                 'en': 'Slovakia',
                 'es': 'Eslovaquia',
                 'pt': 'Eslováquia'
@@ -6342,7 +6342,7 @@ export const localidades = {
             'slug': 'eslovenia',
             'sigla': 'SI',
             'sigla3': 'SVN',
-            'nome': {
+            'nomes': {
                 'en': 'Slovenia',
                 'es': 'Eslovenia',
                 'pt': 'Eslovênia'
@@ -6373,7 +6373,7 @@ export const localidades = {
             'slug': 'ilhas-salomao',
             'sigla': 'SB',
             'sigla3': 'SLB',
-            'nome': {
+            'nomes': {
                 'en': 'Solomon Islands',
                 'es': 'Islas Salomón',
                 'pt': 'Ilhas Salomão'
@@ -6404,7 +6404,7 @@ export const localidades = {
             'slug': 'somalia',
             'sigla': 'SO',
             'sigla3': 'SOM',
-            'nome': {
+            'nomes': {
                 'en': 'Somalia',
                 'es': 'Somalia',
                 'pt': 'Somália'
@@ -6435,7 +6435,7 @@ export const localidades = {
             'slug': 'africa-do-sul',
             'sigla': 'ZA',
             'sigla3': 'ZAF',
-            'nome': {
+            'nomes': {
                 'en': 'South Africa',
                 'es': 'Sudáfrica',
                 'pt': 'África do Sul'
@@ -6466,7 +6466,7 @@ export const localidades = {
             'slug': 'ilhas-georgia-do-sul-e-sandwich-do-sul',
             'sigla': 'GS',
             'sigla3': 'SGS',
-            'nome': {
+            'nomes': {
                 'en': 'South Georgia and the South Sandwich Islands',
                 'es': 'Georgia del Sur y las Islas Sandwich del Sur',
                 'pt': 'Ilhas Geórgia do Sul e Sandwich do Sul'
@@ -6497,7 +6497,7 @@ export const localidades = {
             'slug': 'sudao-do-sul',
             'sigla': 'SS',
             'sigla3': 'SSD',
-            'nome': {
+            'nomes': {
                 'en': 'South Sudan',
                 'es': 'Sudán del Sur',
                 'pt': 'Sudão do Sul'
@@ -6528,7 +6528,7 @@ export const localidades = {
             'slug': 'espanha',
             'sigla': 'ES',
             'sigla3': 'ESP',
-            'nome': {
+            'nomes': {
                 'en': 'Spain',
                 'es': 'España',
                 'pt': 'Espanha'
@@ -6559,7 +6559,7 @@ export const localidades = {
             'slug': 'sri-lanka',
             'sigla': 'LK',
             'sigla3': 'LKA',
-            'nome': {
+            'nomes': {
                 'en': 'Sri Lanka',
                 'es': 'Sri Lanka',
                 'pt': 'Sri Lanka'
@@ -6590,7 +6590,7 @@ export const localidades = {
             'slug': 'sudao',
             'sigla': 'SD',
             'sigla3': 'SDN',
-            'nome': {
+            'nomes': {
                 'en': 'Sudan',
                 'es': 'Sudán',
                 'pt': 'Sudão'
@@ -6621,7 +6621,7 @@ export const localidades = {
             'slug': 'suriname',
             'sigla': 'SR',
             'sigla3': 'SUR',
-            'nome': {
+            'nomes': {
                 'en': 'Suriname',
                 'es': 'Suriname',
                 'pt': 'Suriname'
@@ -6652,7 +6652,7 @@ export const localidades = {
             'slug': 'svalbard-e-jan-mayen-islands',
             'sigla': 'SJ',
             'sigla3': 'SJM',
-            'nome': {
+            'nomes': {
                 'en': 'Svalbard and Jan Mayen Islands',
                 'es': 'Islas Svalbard y Jan Mayen',
                 'pt': 'Svalbard e Jan Mayen Islands'
@@ -6685,7 +6685,7 @@ export const localidades = {
             'slug': 'suazilandia',
             'sigla': 'SZ',
             'sigla3': 'SWZ',
-            'nome': {
+            'nomes': {
                 'en': 'Swaziland',
                 'es': 'Swazilandia',
                 'pt': 'Suazilândia'
@@ -6716,7 +6716,7 @@ export const localidades = {
             'slug': 'suecia',
             'sigla': 'SE',
             'sigla3': 'SWE',
-            'nome': {
+            'nomes': {
                 'en': 'Sweden',
                 'es': 'Suecia',
                 'pt': 'Suécia'
@@ -6747,7 +6747,7 @@ export const localidades = {
             'slug': 'suica',
             'sigla': 'CH',
             'sigla3': 'CHE',
-            'nome': {
+            'nomes': {
                 'en': 'Switzerland',
                 'es': 'Suiza',
                 'pt': 'Suíça'
@@ -6778,7 +6778,7 @@ export const localidades = {
             'slug': 'siria',
             'sigla': 'SY',
             'sigla3': 'SYR',
-            'nome': {
+            'nomes': {
                 'en': 'Syrian Arab Republic',
                 'es': 'República Árabe Siria',
                 'pt': 'Síria'
@@ -6811,7 +6811,7 @@ export const localidades = {
             'slug': 'taiwan',
             'sigla': 'TW',
             'sigla3': 'TWN',
-            'nome': {
+            'nomes': {
                 'en': 'Taiwan (Province of China)',
                 'es': 'República de China (Taiwán)',
                 'pt': 'Taiwan'
@@ -6844,7 +6844,7 @@ export const localidades = {
             'slug': 'tadjiquistao',
             'sigla': 'TJ',
             'sigla3': 'TJK',
-            'nome': {
+            'nomes': {
                 'en': 'Tajikistan',
                 'es': 'Tayikistán',
                 'pt': 'Tadjiquistão'
@@ -6875,7 +6875,7 @@ export const localidades = {
             'slug': 'tanzania',
             'sigla': 'TZ',
             'sigla3': 'TZA',
-            'nome': {
+            'nomes': {
                 'en': 'United Republic of Tanzania',
                 'es': 'República Unida de Tanzanía',
                 'pt': 'Tanzânia'
@@ -6910,7 +6910,7 @@ export const localidades = {
             'slug': 'tailandia',
             'sigla': 'TH',
             'sigla3': 'THA',
-            'nome': {
+            'nomes': {
                 'en': 'Thailand',
                 'es': 'Tailandia',
                 'pt': 'Tailândia'
@@ -6941,7 +6941,7 @@ export const localidades = {
             'slug': 'timor-leste',
             'sigla': 'TL',
             'sigla3': 'TLS',
-            'nome': {
+            'nomes': {
                 'en': 'Timor-Leste',
                 'es': 'Timor-Leste',
                 'pt': 'Timor Leste'
@@ -6972,7 +6972,7 @@ export const localidades = {
             'slug': 'togo',
             'sigla': 'TG',
             'sigla3': 'TGO',
-            'nome': {
+            'nomes': {
                 'en': 'Togo',
                 'es': 'Togo',
                 'pt': 'Togo'
@@ -7005,7 +7005,7 @@ export const localidades = {
             'slug': 'tokelau',
             'sigla': 'TK',
             'sigla3': 'TKL',
-            'nome': {
+            'nomes': {
                 'en': 'Tokelau',
                 'es': 'Tokelau',
                 'pt': 'Tokelau'
@@ -7036,7 +7036,7 @@ export const localidades = {
             'slug': 'tonga',
             'sigla': 'TO',
             'sigla3': 'TON',
-            'nome': {
+            'nomes': {
                 'en': 'Tonga',
                 'es': 'Tonga',
                 'pt': 'Tonga'
@@ -7067,7 +7067,7 @@ export const localidades = {
             'slug': 'trinidad-e-tobago',
             'sigla': 'TT',
             'sigla3': 'TTO',
-            'nome': {
+            'nomes': {
                 'en': 'Trinidad and Tobago',
                 'es': 'Trinidad y Tabago',
                 'pt': 'Trinidad e Tobago'
@@ -7098,7 +7098,7 @@ export const localidades = {
             'slug': 'tunisia',
             'sigla': 'TN',
             'sigla3': 'TUN',
-            'nome': {
+            'nomes': {
                 'en': 'Tunisia',
                 'es': 'Túnez',
                 'pt': 'Tunísia'
@@ -7129,7 +7129,7 @@ export const localidades = {
             'slug': 'turquia',
             'sigla': 'TR',
             'sigla3': 'TUR',
-            'nome': {
+            'nomes': {
                 'en': 'Turkey',
                 'es': 'Turquía',
                 'pt': 'Turquia'
@@ -7160,7 +7160,7 @@ export const localidades = {
             'slug': 'turcomenistao',
             'sigla': 'TM',
             'sigla3': 'TKM',
-            'nome': {
+            'nomes': {
                 'en': 'Turkmenistan',
                 'es': 'Turkmenistán',
                 'pt': 'Turcomenistão'
@@ -7191,7 +7191,7 @@ export const localidades = {
             'slug': 'ilhas-turks-e-caicos',
             'sigla': 'TC',
             'sigla3': 'TCA',
-            'nome': {
+            'nomes': {
                 'en': 'Turks and Caicos Islands',
                 'es': 'Islas Turcas y Caicos',
                 'pt': 'Ilhas Turks e Caicos'
@@ -7222,7 +7222,7 @@ export const localidades = {
             'slug': 'tuvalu',
             'sigla': 'TV',
             'sigla3': 'TUV',
-            'nome': {
+            'nomes': {
                 'en': 'Tuvalu',
                 'es': 'Tuvalu',
                 'pt': 'Tuvalu'
@@ -7253,7 +7253,7 @@ export const localidades = {
             'slug': 'uganda',
             'sigla': 'UG',
             'sigla3': 'UGA',
-            'nome': {
+            'nomes': {
                 'en': 'Uganda',
                 'es': 'Uganda',
                 'pt': 'Uganda'
@@ -7284,7 +7284,7 @@ export const localidades = {
             'slug': 'ucrania',
             'sigla': 'UA',
             'sigla3': 'UKR',
-            'nome': {
+            'nomes': {
                 'en': 'Ukraine',
                 'es': 'Ucrania',
                 'pt': 'Ucrânia'
@@ -7315,7 +7315,7 @@ export const localidades = {
             'slug': 'emirados-arabes-unidos',
             'sigla': 'AE',
             'sigla3': 'ARE',
-            'nome': {
+            'nomes': {
                 'en': 'United Arab Emirates',
                 'es': 'Emiratos Árabes Unidos',
                 'pt': 'Emirados Árabes Unidos'
@@ -7346,7 +7346,7 @@ export const localidades = {
             'slug': 'reino-unido',
             'sigla': 'GB',
             'sigla3': 'GBR',
-            'nome': {
+            'nomes': {
                 'en': 'United Kingdom of Great Britain and Northern Ireland',
                 'es': 'Reino Unido de Gran Bretaña e Irlanda del Norte',
                 'pt': 'Reino Unido'
@@ -7379,7 +7379,7 @@ export const localidades = {
             'slug': 'ilhas-menores-distantes-dos-estados-unidos',
             'sigla': 'UM',
             'sigla3': 'UMI',
-            'nome': {
+            'nomes': {
                 'en': 'United States Minor Outlying Islands',
                 'es': 'Islas menores alejadas de Estados Unidos',
                 'pt': 'Ilhas Menores Distantes dos Estados Unidos'
@@ -7410,7 +7410,7 @@ export const localidades = {
             'slug': 'estados-unidos-da-america',
             'sigla': 'US',
             'sigla3': 'USA',
-            'nome': {
+            'nomes': {
                 'en': 'United States of America',
                 'es': 'Estados Unidos de América',
                 'pt': 'Estados Unidos da América'
@@ -7443,7 +7443,7 @@ export const localidades = {
             'slug': 'uruguai',
             'sigla': 'UY',
             'sigla3': 'URY',
-            'nome': {
+            'nomes': {
                 'en': 'Uruguay',
                 'es': 'Uruguay',
                 'pt': 'Uruguai'
@@ -7474,7 +7474,7 @@ export const localidades = {
             'slug': 'uzbequistao',
             'sigla': 'UZ',
             'sigla3': 'UZB',
-            'nome': {
+            'nomes': {
                 'en': 'Uzbekistan',
                 'es': 'Uzbekistán',
                 'pt': 'Uzbequistão'
@@ -7505,7 +7505,7 @@ export const localidades = {
             'slug': 'vanuatu',
             'sigla': 'VU',
             'sigla3': 'VUT',
-            'nome': {
+            'nomes': {
                 'en': 'Vanuatu',
                 'es': 'Vanuatu',
                 'pt': 'Vanuatu'
@@ -7536,7 +7536,7 @@ export const localidades = {
             'slug': 'venezuela',
             'sigla': 'VE',
             'sigla3': 'VEN',
-            'nome': {
+            'nomes': {
                 'en': 'Venezuela (Bolivarian Republic of)',
                 'es': 'Venezuela (República Bolivariana de)',
                 'pt': 'Venezuela'
@@ -7569,7 +7569,7 @@ export const localidades = {
             'slug': 'vietna',
             'sigla': 'VN',
             'sigla3': 'VNM',
-            'nome': {
+            'nomes': {
                 'en': 'Viet Nam',
                 'es': 'Viet Nam',
                 'pt': 'Vietnã'
@@ -7602,7 +7602,7 @@ export const localidades = {
             'slug': 'ilhas-virgens-britanicas',
             'sigla': 'VG',
             'sigla3': 'VGB',
-            'nome': {
+            'nomes': {
                 'en': 'British Virgin Islands',
                 'es': 'Islas Vírgenes Británicas',
                 'pt': 'Ilhas Virgens Britânicas'
@@ -7633,7 +7633,7 @@ export const localidades = {
             'slug': 'ilhas-virgens',
             'sigla': 'VI',
             'sigla3': 'VIR',
-            'nome': {
+            'nomes': {
                 'en': 'United States Virgin Islands',
                 'es': 'Islas Vírgenes de los Estados Unidos',
                 'pt': 'Ilhas Virgens'
@@ -7666,7 +7666,7 @@ export const localidades = {
             'slug': 'ilhas-wallis-e-futuna',
             'sigla': 'WF',
             'sigla3': 'WLF',
-            'nome': {
+            'nomes': {
                 'en': 'Wallis and Futuna Islands',
                 'es': 'Islas Wallis y Futuna',
                 'pt': 'Ilhas Wallis e Futuna'
@@ -7699,7 +7699,7 @@ export const localidades = {
             'slug': 'saara-ocidental',
             'sigla': 'EH',
             'sigla3': 'ESH',
-            'nome': {
+            'nomes': {
                 'en': 'Western Sahara',
                 'es': 'Sáhara Occidental',
                 'pt': 'Saara Ocidental'
@@ -7730,7 +7730,7 @@ export const localidades = {
             'slug': 'iemen',
             'sigla': 'YE',
             'sigla3': 'YEM',
-            'nome': {
+            'nomes': {
                 'en': 'Yemen',
                 'es': 'Yemen',
                 'pt': 'Iêmen'
@@ -7761,7 +7761,7 @@ export const localidades = {
             'slug': 'zambia',
             'sigla': 'ZM',
             'sigla3': 'ZMB',
-            'nome': {
+            'nomes': {
                 'en': 'Zambia',
                 'es': 'Zambia',
                 'pt': 'Zâmbia'
@@ -7792,7 +7792,7 @@ export const localidades = {
             'slug': 'zimbabue',
             'sigla': 'ZW',
             'sigla3': 'ZWE',
-            'nome': {
+            'nomes': {
                 'en': 'Zimbabwe',
                 'es': 'Zimbabwe',
                 'pt': 'Zimbábue'

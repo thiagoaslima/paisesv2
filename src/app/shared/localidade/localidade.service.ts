@@ -29,7 +29,7 @@ export class LocalidadeService {
     nome: string,
     idioma: 'en' | 'es' | 'pt' = 'pt'
   ): Pais | null {
-    return this.getAllPaises().find(pais => pais.nome[idioma] === nome) || null;
+    return this.getAllPaises().find(pais => pais.nomes[idioma] === nome) || null;
   }
 
   public getPaisBySigla(sigla: string): Pais | null {

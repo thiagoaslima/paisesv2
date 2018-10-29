@@ -73,12 +73,10 @@ export class PaisesService extends RequestService {
     ).pipe(map(response => response.find(obj => obj.indicador === 44)));
   }
 
-  getResultados(sigla: string) {
+  getResultados(sigla: string[]) {
     return this.request<API.ResultadoByLocalidade[]>(
-      `https://servicodados.ibge.gov.br/api/v1/pesquisas/10071/indicadores/0/resultados/${sigla}?groupBy=localidade`
-    ).pipe(map(response => {
-      return response[0];
-    }));
+      `https://servicodados.ibge.gov.br/api/v1/pesquisas/10071/indicadores/0/resultados/${sigla.join('|')}?groupBy=localidade`
+    );
   }
 
   getIndicadoresETemas() {

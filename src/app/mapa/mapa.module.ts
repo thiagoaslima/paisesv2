@@ -10,7 +10,8 @@ import { mapaReducer } from './store/reducers';
 import { SinteseMapaComponent } from './sintese-mapa/sintese-mapa.component';
 import { CoreModule } from 'app/core/core.module';
 import { SharedModule } from 'app/shared/shared.module';
-import { PaisesCompararComponent } from './comparar/comparar.component';
+import { CompararWrapperComponent } from './comparar-wrapper/comparar-wrapper.component';
+import { SeletorPaisesComponent } from './comparar-wrapper/seletor-paises/seletor-paises.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,12 @@ import { PaisesCompararComponent } from './comparar/comparar.component';
     LeafletModule.forRoot(),
     StoreModule.forFeature('mapa', mapaReducer)
   ],
-  declarations: [MapaWrapperComponent, MapaPageComponent, SinteseMapaComponent, PaisesCompararComponent]
+  declarations: [
+    MapaWrapperComponent,
+    MapaPageComponent,
+    SinteseMapaComponent,
+    CompararWrapperComponent,
+    SeletorPaisesComponent
+  ]
 })
 export class MapaModule {}

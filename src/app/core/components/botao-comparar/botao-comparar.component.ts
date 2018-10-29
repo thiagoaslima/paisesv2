@@ -28,6 +28,9 @@ export class BotaoCompararComponent {
   href: string;
 
   @Input()
+  queryParams: Object;
+
+  @Input()
   type: 'comparar' | 'mapa' = 'comparar';
 
   constructor(

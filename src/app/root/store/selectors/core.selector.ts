@@ -9,8 +9,18 @@ export const getPais = createSelector(
   getCurrentLanguage,
   (state, language) => {
     return state.pais
-      ? { ...state.pais, nome: state.pais.nome[language] }
+      ? { ...state.pais, nome: state.pais.nomes[language], currentSlug: state.pais.slugs[language] }
       : null;
+  }
+);
+
+export const getPaises = createSelector(
+  getCoreState,
+  getCurrentLanguage,
+  (state, language) => {
+    return state.paises
+      .map(pais => ({ ...pais, nome: pais.nomes[language], currentSlug: pais.slugs[language] }))
+      .sort((a, b) => (a.nome > b.nome ? 1 : a.nome < b.nome ? -1 : 0));
   }
 );
 

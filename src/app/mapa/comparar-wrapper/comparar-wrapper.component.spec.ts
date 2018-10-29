@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaisesCompararComponent } from './comparar.component';
+import { CompararWrapperComponent } from './comparar-wrapper.component';
 
-describe('CompararComponent', () => {
-  let component: PaisesCompararComponent;
-  let fixture: ComponentFixture<PaisesCompararComponent>;
+describe('CompararWrapperComponent', () => {
+  let component: CompararWrapperComponent;
+  let fixture: ComponentFixture<CompararWrapperComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PaisesCompararComponent ]
+      declarations: [ CompararWrapperComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PaisesCompararComponent);
+    fixture = TestBed.createComponent(CompararWrapperComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

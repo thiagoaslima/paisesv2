@@ -5,6 +5,8 @@ import { IAppState } from '@root/store/reducers';
 import { TemaId } from 'app/shared/paises/paises.service';
 import { getDadosCard } from '../store/selectors/card.selector';
 import { getPais } from '@root/store/selectors/core.selector';
+import { getTema, getTemas, getTemasByTemaName } from '@root/store/selectors/indicadores.selector';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'dados-graficos',
@@ -26,6 +28,7 @@ export class DadosGraficosComponent {
   SAUDE = '';
 
   pais$ = this.store.pipe(select(getPais));
+  temas$ = this.store.pipe(select(getTemasByTemaName));
   economia$ = this.store.pipe(select(getDadosCard(TemaId.economia.toString(10))));
   sociais$ = this.store.pipe(select(getDadosCard(TemaId.sociais.toString(10))));
   ambiente$ = this.store.pipe(select(getDadosCard(TemaId.ambiente.toString(10))));

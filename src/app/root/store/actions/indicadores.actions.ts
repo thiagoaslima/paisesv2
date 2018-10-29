@@ -3,10 +3,10 @@ import { API } from 'app/shared/paises/models';
 import { ITemaIndicadores } from 'app/shared/paises/models/TemaIndicadores';
 
 export enum IndicadoresActionTypes {
-  INDICADORES_GET = '[core] get indicadores',
-  INDICADORES_SUCCESS = '[core] get indicadores success',
-  INDICADORES_FAIL = '[core] get indicadores fail',
-  TEMAS_SET = '[core] set temas'
+  INDICADORES_GET = '[init] get indicadores',
+  INDICADORES_SUCCESS = '[init] get indicadores success',
+  INDICADORES_FAIL = '[init] get indicadores fail',
+  TEMAS_SET = '[init] set temas'
 }
 
 export class IndicadoresGet implements Action {
