@@ -73,6 +73,16 @@ export class PaisesService extends RequestService {
     ).pipe(map(response => response.find(obj => obj.indicador === 44)));
   }
 
+  getResultados(sigla: string) {
+    debugger;
+    return this.request<API.ResultadoByLocalidade[]>(
+      `https://servicodados.ibge.gov.br/api/v1/pesquisas/10071/indicadores/0/resultados/${sigla}?groupBy=localidade`
+    ).pipe(map(response => {
+      debugger;
+      return response[0];
+    }));
+  }
+
   getIndicadoresETemas() {
     return this.getAllIndicadores().pipe(
       map(indicadores =>
@@ -82,10 +92,8 @@ export class PaisesService extends RequestService {
       ),
       map(indicadores => {
         const temas = this.setTemas(indicadores);
-
         const indicadoresMap = {};
         indicadores.forEach(ind => this.flatTree(ind, indicadoresMap));
-
         return { indicadores: indicadoresMap, temas };
       })
     );
@@ -124,7 +132,7 @@ export class PaisesService extends RequestService {
 
   private flatTree(
     indicador: API.Indicador,
-    flatten: {[id: number]: API.Indicador}
+    flatten: { [id: number]: API.Indicador }
   ) {
     flatten[indicador.id] = indicador;
     if (indicador.children && indicador.children.length > 0) {

@@ -1,15 +1,11 @@
 paises-sintese {
   display: block;
+  color: inherit;
 
   table {
-    color: $text-white;
     font-size: 0.9em;
     text-align: left;
     width: 100%;
-
-    @include desktop() {
-      color: $text-black;
-    }
   }
 
   tr {

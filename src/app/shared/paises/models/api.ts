@@ -36,4 +36,12 @@ export declare namespace API {
       calculo: string;
     };
   }
+
+  export interface ResultadoByLocalidade {
+    localidade: string;
+    res: Array<{
+      indicador: number;
+      res: { [periodo: string]: string | null };
+    }>;
+  }
 }

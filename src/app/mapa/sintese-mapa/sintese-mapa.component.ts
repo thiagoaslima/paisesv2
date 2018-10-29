@@ -19,6 +19,10 @@ import { Translate } from '@lang/decorator/Translate.decorator';
   shouldMark: true
 })
 export class SinteseMapaComponent {
+  // marcação texto da view
+  LEIA_MAIS = '';
+  SEM_DADOS = '';
+
   sintese$ = combineLatest(
     this.store.pipe(select(getPais)),
     this.store.pipe(select(getSinteseCurrentPais)),

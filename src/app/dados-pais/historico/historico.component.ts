@@ -22,6 +22,11 @@ import { Translate } from '@lang/decorator/Translate.decorator';
 export class HistoricoComponent {
   historico_aberto = false;
 
+  // texto da view
+  HISTORICO = '';
+  TEXTO_MAIS = '';
+  TEXTO_MENOS = '';
+
   @Input()
   historico: {
     texto?: string[];

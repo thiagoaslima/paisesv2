@@ -2,10 +2,10 @@ import { Params } from '@angular/router';
 import { ActionReducerMap, MetaReducer } from '@ngrx/store';
 import * as fromRouter from '@ngrx/router-store';
 
-import { environment } from '@env/environment';
 import { ICoreState, coreReducer } from './core.reducer';
 import { ISinteseState, sinteseReducer } from './sintese.reducer';
 import { IIndicadoresState, indicadoresReducer } from './indicadores.reducer';
+import { resultadosReducer, IResultadoState } from './resultados.reducer';
 
 export interface IRouterStateUrl {
   url: string;
@@ -19,15 +19,13 @@ export interface IAppState {
   core: ICoreState;
   sintese: ISinteseState;
   indicadores: IIndicadoresState;
+  resultados: IResultadoState;
 }
 
 export const reducers: ActionReducerMap<IAppState> = {
   routerReducer: fromRouter.routerReducer,
   core: coreReducer,
   sintese: sinteseReducer,
-  indicadores: indicadoresReducer
+  indicadores: indicadoresReducer,
+  resultados: resultadosReducer
 };
-
-export const metaReducers: MetaReducer<IAppState>[] = !environment.production
-  ? []
-  : [];
