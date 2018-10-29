@@ -23,7 +23,11 @@ export class HistoricoComponent {
   historico_aberto = false;
 
   @Input()
-  historico: IHistoricoPais;
+  historico: {
+    texto?: string[];
+    links?: string[];
+  } = {};
+
 
   constructor(
     private store: Store<IAppState>,

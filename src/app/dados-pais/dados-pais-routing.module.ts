@@ -3,10 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { DadosWrapperComponent } from './dados-wrapper/dados-wrapper.component';
 import { SintesePaisGuard } from '@root/guards/sintese-pais.guard';
 import { PaisHistoricoGuard } from '@root/guards/pais-historico.guard';
+import { IndicadoresGuard } from '@root/guards/indicadores.guard';
 
 const routes: Routes = [
-  { path: ':pais', component: DadosWrapperComponent, canActivate: [SintesePaisGuard, PaisHistoricoGuard] },
-  { path: '', pathMatch: 'full', redirectTo: '/mapa' },
+  {
+    path: ':pais',
+    component: DadosWrapperComponent,
+    canActivate: [IndicadoresGuard, SintesePaisGuard, PaisHistoricoGuard]
+  },
+  { path: '', pathMatch: 'full', redirectTo: '/mapa' }
 ];
 
 @NgModule({
@@ -14,4 +19,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [SintesePaisGuard, PaisHistoricoGuard]
 })
-export class DadosPaisRoutingModule { }
+export class DadosPaisRoutingModule {}

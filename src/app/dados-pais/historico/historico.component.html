@@ -2,7 +2,7 @@
 <div class="dados-pais__historico">
     <div class="dados-pais__historico-titulo-container" [class.dados-pais__historico-titulo-container--ativo]="historico_aberto"
         (click)="historico_aberto = !historico_aberto">
-        <h3 class="dados-pais__historico-titulo">{{ HISTORICO }} | {{ TEXTO_MAIS }} | {{ TEXTO_MENOS }}</h3>
+        <h3 class="dados-pais__historico-titulo">{{ HISTORICO }}</h3>
         <i class="fa fa-plus dados-pais__historico-icone" aria-hidden="true" *ngIf="!historico_aberto"></i>
         <i class="fa fa-minus dados-pais__historico-icone" aria-hidden="true" *ngIf="historico_aberto"></i>
     </div>

@@ -81,6 +81,11 @@
 	font-size: 0.8em;
 }
 
+sintese-mapa paises-sintese table, 
+.sintese paises-sintese table {
+	color: #4f4f4f;
+}
+
 /*desktop*/
 @media only screen and (min-width : 568px) {
 	.sintese{

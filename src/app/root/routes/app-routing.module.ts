@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CanActivate } from '@angular/router/src/utils/preactivation';
-import { SintesePaisGuard } from '@root/guards/sintese-pais.guard';
+import { IndicadoresGuard } from '@root/guards/indicadores.guard';
 
 const routes: Routes = [
   {
@@ -16,7 +15,6 @@ const routes: Routes = [
   {
     path: 'dados',
     loadChildren: 'app/dados-pais/dados-pais.module#DadosPaisModule',
-
   },
   { path: '**', redirectTo: 'mapa', pathMatch: 'full' }
 ];
