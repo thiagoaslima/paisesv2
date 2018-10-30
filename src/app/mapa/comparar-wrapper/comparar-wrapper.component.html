@@ -14,12 +14,41 @@
      <!--dados-->
      <div class="comparar__info-container">
          <seletor-paises [selecionados]="selecionados$ | async" [paises]="paises$ | async"></seletor-paises>
+
+         <div class="comparar__dados-container">
+            <!--<div class="comparar__botoes-container">
+                <button class="comparar__botao">Imprimir</button>
+                <button class="comparar__botao">Donwload</button>
+            </div>-->
+            <!--comboboxes-->
+            <div class="comparar__select-container">
+                <paises-select class="comparar__select" [dados]="temas$ | async" [selecionado]="temaSelecionado$ | async" (alter)="setTema($event)"></paises-select>
+                <paises-select class="comparar__select" [dados]="indicadores$ | async" [selecionado]="indicadorSelecionado$ | async" (alter)="setIndicador($event)"></paises-select>
+            </div>
+            <!--grafico-->
+            <div class="comparar__grafico-container">
+                
+                <!--
+                <paises-grafico
+                    [rotulosX]="getPeriodos()"
+                    [rotulosY]="getLegenda()"
+                    [dados]="getValores()"
+                    [unidade]="getUnidade()"
+                    [mostrarLegenda]="true"
+                    [LARGURA_GRAFICO]="640"
+                    [ALTURA_GRAFICO]="320">
+                </paises-grafico>
+                -->
+            </div>
+        </div>
     </div>
 
 
 
 </div>
 
+<!-- 
 <pre>{{ temas$ | async | json }}</pre>
 <pre>{{ selecionados$ | async | json }}</pre>
-<pre>{{ indicadores$ | async | json }}</pre>
+<pre>{{ indicadores$ | async | json }}</pre> 
+-->

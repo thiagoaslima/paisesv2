@@ -19,7 +19,7 @@ export class ResultadosCompararGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot
   ): Observable<boolean> | Promise<boolean> | boolean {
-    const siglas = route.queryParams.paises.split(',').map(sigla => sigla.trim());
+    const siglas = route.queryParams.paises ? route.queryParams.paises.split(',').map(sigla => sigla.trim()) : [];
     return this.hasResultados(siglas);
   }
 

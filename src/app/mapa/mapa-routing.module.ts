@@ -8,13 +8,22 @@ import { ResultadosCompararGuard } from '@root/guards/resultados-comparar.guard'
 import { CompararWrapperComponent } from './comparar-wrapper/comparar-wrapper.component';
 
 const routes: Routes = [
-  { path: '', component: MapaPageComponent, children: [
-    { path: 'comparar', component: CompararWrapperComponent, canActivate: [
-      IndicadoresGuard,
-      ResultadosCompararGuard
-    ]},
-    { path: ':pais', component: SinteseMapaComponent, canActivate: [SinteseMapaGuard] }
-  ] },
+  {
+    path: '',
+    component: MapaPageComponent,
+    children: [
+      {
+        path: 'comparar',
+        component: CompararWrapperComponent,
+        canActivate: [IndicadoresGuard, ResultadosCompararGuard]
+      },
+      {
+        path: ':pais',
+        component: SinteseMapaComponent,
+        canActivate: [SinteseMapaGuard]
+      }
+    ]
+  }
 ];
 
 @NgModule({
@@ -22,4 +31,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [SinteseMapaGuard, IndicadoresGuard, ResultadosCompararGuard]
 })
-export class MapaRoutingModule { }
+export class MapaRoutingModule {}

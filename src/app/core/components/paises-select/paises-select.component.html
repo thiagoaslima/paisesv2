@@ -1,0 +1,5 @@
+<select #select (change)="handleChange(select.value)">
+  <option *ngFor="let item of dados" [value]="item.value" [selected]="item.value == selecionado.value">
+    {{ item.texto }}
+  </option>
+</select>

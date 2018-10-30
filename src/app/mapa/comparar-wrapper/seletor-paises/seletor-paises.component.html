@@ -8,7 +8,7 @@
       <li class="comparar__lista-item-pais">
         <input #input [attr.id]="pais.sigla" type="checkbox" [checked]="selecionados.paises.includes(pais.sigla)"
           [disabled]="!selecionados.paises.includes(pais.sigla) && selecionados.paises.length >= 5" [value]="pais.sigla"
-          (change)="selectPais(input.value)" /> <label [attr.for]="pais.sigla">{{ pais?.nome }}</label>
+          (change)="selectPais(input.value, input.checked)" /> <label class="comparar__label" [attr.for]="pais.sigla">{{ pais?.nome }}</label>
       </li>
     </ng-template>
   </ul>

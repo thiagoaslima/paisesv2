@@ -6,6 +6,7 @@ import { BotaoCompararComponent } from './components/botao-comparar/botao-compar
 import { CardComponent } from './components/card/card.component';
 import { GraficoComponent } from './components/grafico/grafico.component';
 import { RouterModule } from '@angular/router';
+import { PaisesSelectComponent } from './components/paises-select/paises-select.component';
 
 @NgModule({
   imports: [CommonModule, SharedModule, RouterModule],
@@ -13,13 +14,15 @@ import { RouterModule } from '@angular/router';
     SinteseComponent,
     BotaoCompararComponent,
     CardComponent,
-    GraficoComponent
+    GraficoComponent,
+    PaisesSelectComponent
   ],
   exports: [
     SinteseComponent,
     BotaoCompararComponent,
     CardComponent,
-    GraficoComponent
+    GraficoComponent,
+    PaisesSelectComponent
   ]
 })
 export class CoreModule {}

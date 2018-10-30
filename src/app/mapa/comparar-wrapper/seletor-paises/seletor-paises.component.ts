@@ -36,7 +36,7 @@ export class SeletorPaisesComponent {
     termo = termo.toLowerCase();
     this.listaPaises = this._paises.filter(
       pais =>
-        pais.toLowerCase().nome.includes(termo) ||
+        pais.nome.toLowerCase().includes(termo) ||
         pais.currentSlug.includes(termo)
     );
   }

@@ -1,0 +1,144 @@
+/*mobile*/
+
+.comparar {
+	position: absolute;
+	border: 1px solid #9f9f9f;
+	background-color: rgba(255, 255, 255, 0.8);
+	top: 32px;
+	bottom: 32px;
+	right: 54px;
+	left: 54px;
+}
+
+.comparar__barra-titulo{
+	background-color: #3f3f3f;
+}
+
+.comparar__titulo{
+	font-size: 0.9em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 32px;
+    padding: 0 30px 0 10px;
+}
+
+.comparar__botao-fechar{
+	position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 32px;
+    padding: 0 10px;
+}
+
+.comparar__icone-fechar{
+	color: #fff;
+}
+
+.comparar__info-container{
+	padding: 10px;
+	width: 100%;
+	height: calc(100% - 32px);
+}
+
+.comparar__seletor-pais-container{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background-color: #f4f4f4;
+}
+
+.comparar__dados-container{
+	width: calc(80% - 10px);
+	height: 100%;
+	float: right;
+}
+
+.comparar__select-container{
+	text-align: center;
+	padding: 7px;
+}
+
+.comparar__select{
+	width: 45%;
+	border: 1px solid rgb(170,170,170);
+	background-color: #f4f4f4;
+	padding: 7px;
+    font-size: 0.8em;
+    font-family: "RobotoMedium", Helvetica, Arial, sans-serif;
+}
+
+.comparar__filtro-pais-container{
+	height: 42px;
+	background: linear-gradient(to right, #42e695, #3bb2b8);
+	padding: 5px;
+}
+
+.comparar__filtro-pais{
+	display: inline-block;
+	width: 100%;
+	height: 32px;
+	border: none;
+	border-radius: 5px;
+	line-height: 2em;
+	padding: 0 5px;
+	font-size: 0.9em;
+}
+
+.comparar__filtro-info{
+	padding: 7px;
+	font-size: 0.8em;
+	margin: 0;
+	height: 32px;
+}
+
+.comparar__lista-pais{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow-y: auto;
+    height: calc(100% - 74px);
+}
+
+.comparar__lista-item-pais{
+	font-family: "RobotoMedium", Helvetica, Arial, sans-serif;
+	padding: 7px;
+	font-size: 0.8em;
+}
+
+.comparar__botoes-container{
+	text-align: right;
+}
+
+.comparar__botao{
+	background: none;
+    border: none;
+    padding: 5px;
+    font-family: "RobotoMedium", Helvetica, Arial, sans-serif;
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+
+.comparar__grafico-container{
+	max-width: 800px;
+    margin: 64px auto;
+}
+
+.comparar__label {
+    margin-left: 5px;
+}
+
+/*desktop*/
+@media only screen and (min-width : 568px) {
+
+	.comparar {
+		top: 32px;
+		bottom: 32px;
+		right: 54px;
+		left: 54px;
+	}
+
+}
